@@ -31,3 +31,4 @@ C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow
 C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\obj\Debug\net8.0-windows\CSCI363_GeneralDisarrays_JonsWindow1.pdb
 C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\obj\Debug\net8.0-windows\CSCI363_GeneralDisarrays_JonsWindow1.genruntimeconfig.cache
 C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\obj\Debug\net8.0-windows\ref\CSCI363_GeneralDisarrays_JonsWindow1.dll
+C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\obj\Debug\net8.0-windows\CSCI363_GeneralDisarrays_JonsWindow1.Form2.resources
