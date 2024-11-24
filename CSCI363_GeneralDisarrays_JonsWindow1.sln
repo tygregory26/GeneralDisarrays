@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSCI363_GeneralDisarrays_JonsWindow1", "CSCI363_GeneralDisarrays_JonsWindow1\CSCI363_GeneralDisarrays_JonsWindow1.csproj", "{6701DFE9-308E-4354-9D9F-E63E4A988740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60B1D102-60AC-4EB6-90F5-3C1FB5D73438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6701DFE9-308E-4354-9D9F-E63E4A988740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6701DFE9-308E-4354-9D9F-E63E4A988740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6701DFE9-308E-4354-9D9F-E63E4A988740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6701DFE9-308E-4354-9D9F-E63E4A988740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

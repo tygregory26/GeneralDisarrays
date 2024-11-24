@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|c:\\users\\razor\\source\\repos\\generaldisarrays\\csci363_generaldisarrays_jonswindow1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|solutionrelative:csci363_generaldisarrays_jonswindow1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|c:\\users\\razor\\source\\repos\\generaldisarrays\\csci363_generaldisarrays_jonswindow1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|solutionrelative:csci363_generaldisarrays_jonswindow1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|c:\\users\\razor\\source\\repos\\generaldisarrays\\csci363_generaldisarrays_jonswindow1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6701DFE9-308E-4354-9D9F-E63E4A988740}|CSCI363_GeneralDisarrays_JonsWindow1\\CSCI363_GeneralDisarrays_JonsWindow1.csproj|solutionrelative:csci363_generaldisarrays_jonswindow1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 97,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 204,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "RelativeDocumentMoniker": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs [Design]",
+              "RelativeToolTip": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T21:32:16.651Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 510,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.Designer.cs",
+              "RelativeToolTip": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T23:40:57.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "RelativeDocumentMoniker": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "RelativeToolTip": "CSCI363_GeneralDisarrays_JonsWindow1\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:01:20.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
