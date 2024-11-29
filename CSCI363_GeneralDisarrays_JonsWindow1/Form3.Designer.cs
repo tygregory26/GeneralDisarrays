@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             button10 = new Button();
@@ -54,6 +55,13 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
+            textBox6 = new TextBox();
+            tableLayoutPanel9 = new TableLayoutPanel();
+            button12 = new Button();
+            button11 = new Button();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            textBox8 = new TextBox();
+            textBox7 = new TextBox();
             tableLayoutPanel4 = new TableLayoutPanel();
             textBox1 = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
@@ -67,6 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            tableLayoutPanel3.SuspendLayout();
+            tableLayoutPanel9.SuspendLayout();
+            tableLayoutPanel10.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -85,7 +96,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 44.4444427F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 55.5555573F));
-            tableLayoutPanel1.Size = new Size(800, 450);
+            tableLayoutPanel1.Size = new Size(717, 613);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -118,14 +129,14 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(794, 176);
+            tableLayoutPanel2.Size = new Size(711, 248);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // button10
             // 
             button10.Dock = DockStyle.Fill;
             button10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.Location = new Point(357, 3);
+            button10.Location = new Point(316, 3);
             button10.Name = "button10";
             button10.Size = new Size(54, 24);
             button10.TabIndex = 6;
@@ -136,7 +147,7 @@
             // 
             button9.Dock = DockStyle.Fill;
             button9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(297, 3);
+            button9.Location = new Point(256, 3);
             button9.Name = "button9";
             button9.Size = new Size(54, 24);
             button9.TabIndex = 5;
@@ -149,7 +160,7 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.Controls.Add(button6, 0, 1);
             tableLayoutPanel7.Controls.Add(button2, 0, 0);
-            tableLayoutPanel7.Location = new Point(357, 106);
+            tableLayoutPanel7.Location = new Point(316, 142);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 2;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -185,7 +196,7 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.Controls.Add(button8, 0, 1);
             tableLayoutPanel6.Controls.Add(button3, 0, 0);
-            tableLayoutPanel6.Location = new Point(297, 33);
+            tableLayoutPanel6.Location = new Point(256, 33);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 2;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -221,7 +232,7 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.Controls.Add(button7, 0, 1);
             tableLayoutPanel5.Controls.Add(button4, 0, 0);
-            tableLayoutPanel5.Location = new Point(297, 106);
+            tableLayoutPanel5.Location = new Point(256, 142);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 2;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -257,7 +268,7 @@
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.Controls.Add(button1, 0, 0);
             tableLayoutPanel8.Controls.Add(button5, 0, 1);
-            tableLayoutPanel8.Location = new Point(357, 33);
+            tableLayoutPanel8.Location = new Point(316, 33);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -292,10 +303,10 @@
             // 
             textBox2.Dock = DockStyle.Fill;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(417, 3);
+            textBox2.Location = new Point(376, 3);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(288, 29);
+            textBox2.Size = new Size(247, 29);
             textBox2.TabIndex = 3;
             textBox2.Text = "Front";
             textBox2.TextAlign = HorizontalAlignment.Center;
@@ -307,7 +318,7 @@
             textBox3.Location = new Point(3, 3);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(288, 29);
+            textBox3.Size = new Size(247, 29);
             textBox3.TabIndex = 4;
             textBox3.TabStop = false;
             textBox3.Text = "Rear";
@@ -317,10 +328,10 @@
             // 
             textBox4.Dock = DockStyle.Fill;
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(711, 33);
+            textBox4.Location = new Point(629, 33);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(80, 29);
+            textBox4.Size = new Size(79, 29);
             textBox4.TabIndex = 7;
             textBox4.Text = "Driver";
             // 
@@ -328,46 +339,54 @@
             // 
             textBox5.Dock = DockStyle.Fill;
             textBox5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(711, 106);
+            textBox5.Location = new Point(629, 142);
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
-            textBox5.Size = new Size(80, 27);
+            textBox5.Size = new Size(79, 27);
             textBox5.TabIndex = 8;
             textBox5.Text = "Passenger";
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(3, 33);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(288, 67);
+            pictureBox1.Size = new Size(247, 103);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Location = new Point(3, 106);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 142);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(288, 67);
+            pictureBox2.Size = new Size(247, 103);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Dock = DockStyle.Fill;
-            pictureBox3.Location = new Point(417, 33);
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(376, 33);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(288, 67);
+            pictureBox3.Size = new Size(247, 103);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.Dock = DockStyle.Fill;
-            pictureBox4.Location = new Point(417, 106);
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(376, 142);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(288, 67);
+            pictureBox4.Size = new Size(247, 103);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 12;
             pictureBox4.TabStop = false;
             // 
@@ -376,14 +395,109 @@
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Controls.Add(textBox6, 0, 0);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel9, 1, 0);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel10, 0, 1);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 225);
+            tableLayoutPanel3.Location = new Point(3, 297);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(394, 222);
+            tableLayoutPanel3.Size = new Size(352, 313);
             tableLayoutPanel3.TabIndex = 1;
+            // 
+            // textBox6
+            // 
+            textBox6.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox6.BackColor = SystemColors.Menu;
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox6.Location = new Point(3, 60);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(170, 36);
+            textBox6.TabIndex = 13;
+            textBox6.Text = "Doors";
+            textBox6.TextAlign = HorizontalAlignment.Center;
+            // 
+            // tableLayoutPanel9
+            // 
+            tableLayoutPanel9.ColumnCount = 1;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Controls.Add(button12, 0, 1);
+            tableLayoutPanel9.Controls.Add(button11, 0, 0);
+            tableLayoutPanel9.Dock = DockStyle.Fill;
+            tableLayoutPanel9.Location = new Point(179, 3);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 2;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Size = new Size(170, 150);
+            tableLayoutPanel9.TabIndex = 14;
+            // 
+            // button12
+            // 
+            button12.Dock = DockStyle.Fill;
+            button12.Font = new Font("Segoe UI", 20.25F);
+            button12.Location = new Point(3, 78);
+            button12.Name = "button12";
+            button12.Size = new Size(164, 69);
+            button12.TabIndex = 1;
+            button12.Text = "Unlock";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Dock = DockStyle.Fill;
+            button11.Font = new Font("Segoe UI", 20.25F);
+            button11.Location = new Point(3, 3);
+            button11.Name = "button11";
+            button11.Size = new Size(164, 69);
+            button11.TabIndex = 0;
+            button11.Text = "Lock";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.ColumnCount = 1;
+            tableLayoutPanel3.SetColumnSpan(tableLayoutPanel10, 2);
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Controls.Add(textBox8, 0, 1);
+            tableLayoutPanel10.Controls.Add(textBox7, 0, 0);
+            tableLayoutPanel10.Dock = DockStyle.Fill;
+            tableLayoutPanel10.Location = new Point(3, 159);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 2;
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Size = new Size(346, 151);
+            tableLayoutPanel10.TabIndex = 15;
+            // 
+            // textBox8
+            // 
+            textBox8.Anchor = AnchorStyles.None;
+            textBox8.BackColor = SystemColors.Menu;
+            textBox8.BorderStyle = BorderStyle.None;
+            textBox8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox8.Location = new Point(3, 102);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(340, 22);
+            textBox8.TabIndex = 1;
+            textBox8.Text = "Disable";
+            textBox8.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox7
+            // 
+            textBox7.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox7.BackColor = SystemColors.Menu;
+            textBox7.BorderStyle = BorderStyle.None;
+            textBox7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox7.Location = new Point(3, 26);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(340, 22);
+            textBox7.TabIndex = 0;
+            textBox7.Text = "Remote Start is Enabled";
+            textBox7.TextAlign = HorizontalAlignment.Center;
             // 
             // tableLayoutPanel4
             // 
@@ -391,14 +505,14 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel4.Dock = DockStyle.Fill;
-            tableLayoutPanel4.Location = new Point(403, 225);
+            tableLayoutPanel4.Location = new Point(361, 297);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 4;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel4.Size = new Size(394, 222);
+            tableLayoutPanel4.Size = new Size(353, 313);
             tableLayoutPanel4.TabIndex = 2;
             // 
             // textBox1
@@ -409,7 +523,7 @@
             textBox1.Location = new Point(3, 3);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(794, 43);
+            textBox1.Size = new Size(711, 43);
             textBox1.TabIndex = 0;
             textBox1.Text = "Control Accessories";
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -423,7 +537,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(717, 613);
             Controls.Add(tableLayoutPanel1);
             Name = "Form3";
             Text = "Form3";
@@ -439,6 +553,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
+            tableLayoutPanel9.ResumeLayout(false);
+            tableLayoutPanel10.ResumeLayout(false);
+            tableLayoutPanel10.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -472,5 +591,12 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private TextBox textBox6;
+        private TableLayoutPanel tableLayoutPanel9;
+        private Button button12;
+        private Button button11;
+        private TableLayoutPanel tableLayoutPanel10;
+        private TextBox textBox7;
+        private TextBox textBox8;
     }
 }
