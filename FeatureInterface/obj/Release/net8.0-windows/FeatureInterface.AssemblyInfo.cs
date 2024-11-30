@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FeatureInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4c8dd2194cfcb0aff9c633410136325a453cf99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1e552dcbfee1a5849fce84c8a0138032203e1e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("FeatureInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FeatureInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
