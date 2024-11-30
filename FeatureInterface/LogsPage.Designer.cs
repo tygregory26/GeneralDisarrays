@@ -40,14 +40,16 @@
             button4 = new Button();
             textBox3 = new TextBox();
             NavPanel = new Panel();
-            homeButton = new Button();
-            backButton = new Button();
-            gpsButton = new Button();
-            accButton = new Button();
-            statusButton = new Button();
-            camButton = new Button();
-            logButton = new Button();
+            button5 = new Button();
+            button6 = new Button();
             forwardButton = new Button();
+            logButton = new Button();
+            camButton = new Button();
+            statusButton = new Button();
+            accButton = new Button();
+            gpsButton = new Button();
+            backButton = new Button();
+            homeButton = new Button();
             NavPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -149,6 +151,10 @@
             // 
             // NavPanel
             // 
+            NavPanel.AutoSize = true;
+            NavPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            NavPanel.Controls.Add(button5);
+            NavPanel.Controls.Add(button6);
             NavPanel.Controls.Add(forwardButton);
             NavPanel.Controls.Add(logButton);
             NavPanel.Controls.Add(camButton);
@@ -157,83 +163,111 @@
             NavPanel.Controls.Add(gpsButton);
             NavPanel.Controls.Add(backButton);
             NavPanel.Controls.Add(homeButton);
-            NavPanel.Location = new Point(3, 3);
+            NavPanel.Dock = DockStyle.Top;
+            NavPanel.Location = new Point(0, 0);
             NavPanel.Name = "NavPanel";
-            NavPanel.Size = new Size(949, 58);
-            NavPanel.TabIndex = 11;
+            NavPanel.Size = new Size(954, 49);
+            NavPanel.TabIndex = 15;
             // 
-            // homeButton
+            // button5
             // 
-            homeButton.Location = new Point(109, 9);
-            homeButton.Name = "homeButton";
-            homeButton.Size = new Size(114, 37);
-            homeButton.TabIndex = 0;
-            homeButton.Text = "Home";
-            homeButton.UseVisualStyleBackColor = true;
+            button5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button5.Location = new Point(699, 9);
+            button5.Name = "button5";
+            button5.Size = new Size(81, 37);
+            button5.TabIndex = 20;
+            button5.Text = "Vehicles";
+            button5.UseVisualStyleBackColor = true;
             // 
-            // backButton
+            // button6
             // 
-            backButton.Location = new Point(4, 23);
-            backButton.Name = "backButton";
-            backButton.Size = new Size(44, 35);
-            backButton.TabIndex = 1;
-            backButton.Text = "<--";
-            backButton.UseVisualStyleBackColor = true;
+            button6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button6.Location = new Point(612, 9);
+            button6.Name = "button6";
+            button6.Size = new Size(81, 37);
+            button6.TabIndex = 14;
+            button6.Text = "Drivers";
+            button6.UseVisualStyleBackColor = true;
             // 
-            // gpsButton
+            // forwardButton
             // 
-            gpsButton.Location = new Point(229, 9);
-            gpsButton.Name = "gpsButton";
-            gpsButton.Size = new Size(114, 37);
-            gpsButton.TabIndex = 2;
-            gpsButton.Text = "GPS";
-            gpsButton.UseVisualStyleBackColor = true;
-
-            // 
-            // accButton
-            // 
-            accButton.Location = new Point(349, 9);
-            accButton.Name = "accButton";
-            accButton.Size = new Size(114, 37);
-            accButton.TabIndex = 3;
-            accButton.Text = "Accessories";
-            accButton.UseVisualStyleBackColor = true;
-            // 
-            // statusButton
-            // 
-            statusButton.Location = new Point(469, 9);
-            statusButton.Name = "statusButton";
-            statusButton.Size = new Size(114, 37);
-            statusButton.TabIndex = 12;
-            statusButton.Text = "Status";
-            statusButton.UseVisualStyleBackColor = true;
-            // 
-            // camButton
-            // 
-            camButton.Location = new Point(589, 9);
-            camButton.Name = "camButton";
-            camButton.Size = new Size(114, 37);
-            camButton.TabIndex = 12;
-            camButton.Text = "Cameras";
-            camButton.UseVisualStyleBackColor = true;
+            forwardButton.Dock = DockStyle.Right;
+            forwardButton.Location = new Point(908, 0);
+            forwardButton.Name = "forwardButton";
+            forwardButton.Size = new Size(46, 49);
+            forwardButton.TabIndex = 13;
+            forwardButton.Text = "-->";
+            forwardButton.UseVisualStyleBackColor = true;
             // 
             // logButton
             // 
-            logButton.Location = new Point(709, 9);
+            logButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            logButton.Location = new Point(540, 9);
             logButton.Name = "logButton";
-            logButton.Size = new Size(114, 37);
+            logButton.Size = new Size(66, 37);
             logButton.TabIndex = 12;
             logButton.Text = "Logs";
             logButton.UseVisualStyleBackColor = true;
             // 
-            // forwardButton
+            // camButton
             // 
-            forwardButton.Location = new Point(904, 23);
-            forwardButton.Name = "forwardButton";
-            forwardButton.Size = new Size(46, 36);
-            forwardButton.TabIndex = 13;
-            forwardButton.Text = "-->";
-            forwardButton.UseVisualStyleBackColor = true;
+            camButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            camButton.Location = new Point(453, 9);
+            camButton.Name = "camButton";
+            camButton.Size = new Size(81, 37);
+            camButton.TabIndex = 12;
+            camButton.Text = "Cameras";
+            camButton.UseVisualStyleBackColor = true;
+            // 
+            // statusButton
+            // 
+            statusButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            statusButton.Location = new Point(360, 9);
+            statusButton.Name = "statusButton";
+            statusButton.Size = new Size(87, 37);
+            statusButton.TabIndex = 12;
+            statusButton.Text = "Status";
+            statusButton.UseVisualStyleBackColor = true;
+            // 
+            // accButton
+            // 
+            accButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            accButton.Location = new Point(258, 9);
+            accButton.Name = "accButton";
+            accButton.Size = new Size(96, 37);
+            accButton.TabIndex = 3;
+            accButton.Text = "Accessories";
+            accButton.UseVisualStyleBackColor = true;
+            // 
+            // gpsButton
+            // 
+            gpsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            gpsButton.Location = new Point(153, 9);
+            gpsButton.Name = "gpsButton";
+            gpsButton.Size = new Size(99, 37);
+            gpsButton.TabIndex = 2;
+            gpsButton.Text = "GPS";
+            gpsButton.UseVisualStyleBackColor = true;
+            // 
+            // backButton
+            // 
+            backButton.Dock = DockStyle.Left;
+            backButton.Location = new Point(0, 0);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(44, 49);
+            backButton.TabIndex = 1;
+            backButton.Text = "<--";
+            backButton.UseVisualStyleBackColor = true;
+            // 
+            // homeButton
+            // 
+            homeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            homeButton.Location = new Point(53, 9);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(94, 37);
+            homeButton.TabIndex = 0;
+            homeButton.Text = "Home";
+            homeButton.UseVisualStyleBackColor = true;
             // 
             // mainWindow
             // 
@@ -273,13 +307,15 @@
         private Button button4;
         private TextBox textBox3;
         private Panel NavPanel;
-        private Button homeButton;
-        private Button backButton;
+        private Button button5;
+        private Button button6;
+        private Button forwardButton;
+        private Button logButton;
+        private Button camButton;
         private Button statusButton;
         private Button accButton;
         private Button gpsButton;
-        private Button logButton;
-        private Button camButton;
-        private Button forwardButton;
+        private Button backButton;
+        private Button homeButton;
     }
 }
