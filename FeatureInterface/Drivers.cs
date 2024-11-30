@@ -16,5 +16,20 @@ namespace FeatureInterface
         {
             InitializeComponent();
         }
+
+        private void gpsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forwardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void geoFencShortCutButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
