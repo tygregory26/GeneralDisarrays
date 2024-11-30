@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSCI363_GeneralDisarrays_JonsWindow1
 {
-    public partial class Form2 : Form
+    public partial class SecurityPage : Form
     {
-        public Form2()
+        public SecurityPage()
         {
             InitializeComponent();
         }
