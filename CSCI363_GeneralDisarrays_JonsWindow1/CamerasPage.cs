@@ -2,9 +2,9 @@ using Microsoft.VisualBasic.ApplicationServices;
 
 namespace CSCI363_GeneralDisarrays_JonsWindow1
 {
-    public partial class Form1 : Form
+    public partial class CamerasPage : Form
     {
-        public Form1()
+        public CamerasPage()
         {
             InitializeComponent();
             pictureBox1.Load("C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\ImagesForSecurityCamera\\IMG_20170727_094956_12.jpg");

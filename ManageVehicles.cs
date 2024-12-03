@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSCI363_GeneralDisarrays_JonsWindow1
+namespace FeatureInterface
 {
-    public partial class Form3 : Form
+    public partial class ManageVehicles : Form
     {
-        public Form3()
+        public ManageVehicles()
         {
             InitializeComponent();
         }

@@ -1,0 +1,10 @@
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.csproj.AssemblyReference.cache
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.Drivers.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.Home.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.LogsPage.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.ManageVehicles.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.Owner.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.Form1.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.Properties.Resources.resources
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.csproj.GenerateResource.cache
+C:\Users\Nivloc\Box\UND1473869\CSCI\363\GeneralDisarrays\obj\Debug\Ty.csproj.CoreCompileInputs.cache

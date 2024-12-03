@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CSCI363_GeneralDisarrays_JonsWindow1
 {
-    public partial class Form2 : Form
+    public partial class SecurityPage : Form
     {
         //flags to track and toggle state
         bool lockedDoors = true, armedAlarm = true, enabledRemoteStart = true, alarmActivated = true;
