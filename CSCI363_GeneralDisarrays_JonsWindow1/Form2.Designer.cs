@@ -30,20 +30,21 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel4 = new TableLayoutPanel();
-            button3 = new Button();
-            textBox4 = new TextBox();
+            EnableDisableButton = new Button();
+            RemoteStartStatusText = new TextBox();
             tableLayoutPanel3 = new TableLayoutPanel();
-            button2 = new Button();
-            textBox3 = new TextBox();
+            ArmDisarmButton = new Button();
+            AlarmStatusText = new TextBox();
             textBox1 = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            DoorLockStatusText = new TextBox();
+            LockUnlockButton = new Button();
             tableLayoutPanel5 = new TableLayoutPanel();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
+            AlarmingTextIndicator = new TextBox();
+            NotAlarmingTextIndicator = new TextBox();
             tableLayoutPanel6 = new TableLayoutPanel();
-            button4 = new Button();
+            TriggerAlarmButton = new Button();
+            SilenceAlarm = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -79,8 +80,8 @@
             // 
             tableLayoutPanel4.ColumnCount = 1;
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Controls.Add(button3, 0, 1);
-            tableLayoutPanel4.Controls.Add(textBox4, 0, 0);
+            tableLayoutPanel4.Controls.Add(EnableDisableButton, 0, 1);
+            tableLayoutPanel4.Controls.Add(RemoteStartStatusText, 0, 0);
             tableLayoutPanel4.Dock = DockStyle.Fill;
             tableLayoutPanel4.Location = new Point(3, 261);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -90,34 +91,36 @@
             tableLayoutPanel4.Size = new Size(298, 80);
             tableLayoutPanel4.TabIndex = 8;
             // 
-            // button3
+            // EnableDisableButton
             // 
-            button3.Dock = DockStyle.Fill;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(3, 43);
-            button3.Name = "button3";
-            button3.Size = new Size(292, 34);
-            button3.TabIndex = 6;
-            button3.Text = "Disable";
-            button3.UseVisualStyleBackColor = true;
+            EnableDisableButton.Dock = DockStyle.Fill;
+            EnableDisableButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            EnableDisableButton.Location = new Point(3, 43);
+            EnableDisableButton.Name = "EnableDisableButton";
+            EnableDisableButton.Size = new Size(292, 34);
+            EnableDisableButton.TabIndex = 6;
+            EnableDisableButton.Text = "Disable";
+            EnableDisableButton.UseVisualStyleBackColor = true;
+            EnableDisableButton.Click += EnableDisableButton_Click;
             // 
-            // textBox4
+            // RemoteStartStatusText
             // 
-            textBox4.Dock = DockStyle.Fill;
-            textBox4.Font = new Font("Segoe UI", 12F);
-            textBox4.Location = new Point(3, 3);
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(292, 29);
-            textBox4.TabIndex = 3;
-            textBox4.Text = "Remote start is enabled";
+            RemoteStartStatusText.Dock = DockStyle.Fill;
+            RemoteStartStatusText.Font = new Font("Segoe UI", 12F);
+            RemoteStartStatusText.Location = new Point(3, 3);
+            RemoteStartStatusText.Name = "RemoteStartStatusText";
+            RemoteStartStatusText.ReadOnly = true;
+            RemoteStartStatusText.Size = new Size(292, 29);
+            RemoteStartStatusText.TabIndex = 3;
+            RemoteStartStatusText.TabStop = false;
+            RemoteStartStatusText.Text = "Remote start is enabled";
             // 
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Controls.Add(button2, 0, 1);
-            tableLayoutPanel3.Controls.Add(textBox3, 0, 0);
+            tableLayoutPanel3.Controls.Add(ArmDisarmButton, 0, 1);
+            tableLayoutPanel3.Controls.Add(AlarmStatusText, 0, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 175);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -127,28 +130,30 @@
             tableLayoutPanel3.Size = new Size(298, 80);
             tableLayoutPanel3.TabIndex = 7;
             // 
-            // button2
+            // ArmDisarmButton
             // 
-            button2.Dock = DockStyle.Fill;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(3, 43);
-            button2.Name = "button2";
-            button2.Size = new Size(292, 34);
-            button2.TabIndex = 6;
-            button2.Text = "Disarm";
-            button2.UseVisualStyleBackColor = true;
+            ArmDisarmButton.Dock = DockStyle.Fill;
+            ArmDisarmButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ArmDisarmButton.Location = new Point(3, 43);
+            ArmDisarmButton.Name = "ArmDisarmButton";
+            ArmDisarmButton.Size = new Size(292, 34);
+            ArmDisarmButton.TabIndex = 6;
+            ArmDisarmButton.Text = "Disarm";
+            ArmDisarmButton.UseVisualStyleBackColor = true;
+            ArmDisarmButton.Click += ArmDisarmButton_Click;
             // 
-            // textBox3
+            // AlarmStatusText
             // 
-            textBox3.Dock = DockStyle.Fill;
-            textBox3.Font = new Font("Segoe UI", 12F);
-            textBox3.Location = new Point(3, 3);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(292, 29);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Alarm is armed";
-            textBox3.TextChanged += textBox3_TextChanged;
+            AlarmStatusText.Dock = DockStyle.Fill;
+            AlarmStatusText.Font = new Font("Segoe UI", 12F);
+            AlarmStatusText.Location = new Point(3, 3);
+            AlarmStatusText.Name = "AlarmStatusText";
+            AlarmStatusText.ReadOnly = true;
+            AlarmStatusText.Size = new Size(292, 29);
+            AlarmStatusText.TabIndex = 2;
+            AlarmStatusText.TabStop = false;
+            AlarmStatusText.Text = "Alarm is armed";
+            AlarmStatusText.TextChanged += textBox3_TextChanged;
             // 
             // textBox1
             // 
@@ -168,8 +173,8 @@
             // 
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Controls.Add(textBox2, 0, 0);
-            tableLayoutPanel2.Controls.Add(button1, 0, 1);
+            tableLayoutPanel2.Controls.Add(DoorLockStatusText, 0, 0);
+            tableLayoutPanel2.Controls.Add(LockUnlockButton, 0, 1);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(3, 89);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -179,34 +184,36 @@
             tableLayoutPanel2.Size = new Size(298, 80);
             tableLayoutPanel2.TabIndex = 6;
             // 
-            // textBox2
+            // DoorLockStatusText
             // 
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(3, 3);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(292, 29);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "Doors are locked";
+            DoorLockStatusText.Dock = DockStyle.Fill;
+            DoorLockStatusText.Font = new Font("Segoe UI", 12F);
+            DoorLockStatusText.Location = new Point(3, 3);
+            DoorLockStatusText.Name = "DoorLockStatusText";
+            DoorLockStatusText.ReadOnly = true;
+            DoorLockStatusText.Size = new Size(292, 29);
+            DoorLockStatusText.TabIndex = 1;
+            DoorLockStatusText.TabStop = false;
+            DoorLockStatusText.Text = "Doors are locked";
             // 
-            // button1
+            // LockUnlockButton
             // 
-            button1.Dock = DockStyle.Fill;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(3, 43);
-            button1.Name = "button1";
-            button1.Size = new Size(292, 34);
-            button1.TabIndex = 5;
-            button1.Text = "Unlock";
-            button1.UseVisualStyleBackColor = true;
+            LockUnlockButton.Dock = DockStyle.Fill;
+            LockUnlockButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LockUnlockButton.Location = new Point(3, 43);
+            LockUnlockButton.Name = "LockUnlockButton";
+            LockUnlockButton.Size = new Size(292, 34);
+            LockUnlockButton.TabIndex = 5;
+            LockUnlockButton.Text = "Unlock";
+            LockUnlockButton.UseVisualStyleBackColor = true;
+            LockUnlockButton.Click += button1_Click;
             // 
             // tableLayoutPanel5
             // 
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Controls.Add(textBox6, 0, 1);
-            tableLayoutPanel5.Controls.Add(textBox5, 0, 0);
+            tableLayoutPanel5.Controls.Add(AlarmingTextIndicator, 0, 1);
+            tableLayoutPanel5.Controls.Add(NotAlarmingTextIndicator, 0, 0);
             tableLayoutPanel5.Dock = DockStyle.Fill;
             tableLayoutPanel5.Location = new Point(307, 175);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -216,40 +223,41 @@
             tableLayoutPanel5.Size = new Size(299, 80);
             tableLayoutPanel5.TabIndex = 9;
             // 
-            // textBox6
+            // AlarmingTextIndicator
             // 
-            textBox6.BackColor = Color.Red;
-            textBox6.Dock = DockStyle.Fill;
-            textBox6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(3, 43);
-            textBox6.Name = "textBox6";
-            textBox6.ReadOnly = true;
-            textBox6.Size = new Size(293, 29);
-            textBox6.TabIndex = 5;
-            textBox6.Text = "Alarming";
-            textBox6.TextAlign = HorizontalAlignment.Center;
-            textBox6.Visible = false;
+            AlarmingTextIndicator.BackColor = Color.Red;
+            AlarmingTextIndicator.Dock = DockStyle.Fill;
+            AlarmingTextIndicator.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            AlarmingTextIndicator.Location = new Point(3, 43);
+            AlarmingTextIndicator.Name = "AlarmingTextIndicator";
+            AlarmingTextIndicator.ReadOnly = true;
+            AlarmingTextIndicator.Size = new Size(293, 29);
+            AlarmingTextIndicator.TabIndex = 5;
+            AlarmingTextIndicator.Text = "Alarming";
+            AlarmingTextIndicator.TextAlign = HorizontalAlignment.Center;
+            AlarmingTextIndicator.Visible = false;
             // 
-            // textBox5
+            // NotAlarmingTextIndicator
             // 
-            textBox5.BackColor = Color.FromArgb(0, 192, 0);
-            textBox5.Dock = DockStyle.Fill;
-            textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.ForeColor = SystemColors.WindowText;
-            textBox5.Location = new Point(3, 3);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(293, 29);
-            textBox5.TabIndex = 4;
-            textBox5.Text = "Not Alarming";
-            textBox5.TextAlign = HorizontalAlignment.Center;
+            NotAlarmingTextIndicator.BackColor = Color.FromArgb(0, 192, 0);
+            NotAlarmingTextIndicator.Dock = DockStyle.Fill;
+            NotAlarmingTextIndicator.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            NotAlarmingTextIndicator.ForeColor = SystemColors.WindowText;
+            NotAlarmingTextIndicator.Location = new Point(3, 3);
+            NotAlarmingTextIndicator.Name = "NotAlarmingTextIndicator";
+            NotAlarmingTextIndicator.ReadOnly = true;
+            NotAlarmingTextIndicator.Size = new Size(293, 29);
+            NotAlarmingTextIndicator.TabIndex = 4;
+            NotAlarmingTextIndicator.Text = "Not Alarming";
+            NotAlarmingTextIndicator.TextAlign = HorizontalAlignment.Center;
             // 
             // tableLayoutPanel6
             // 
             tableLayoutPanel6.ColumnCount = 2;
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Controls.Add(button4, 1, 0);
+            tableLayoutPanel6.Controls.Add(TriggerAlarmButton, 0, 0);
+            tableLayoutPanel6.Controls.Add(SilenceAlarm, 1, 0);
             tableLayoutPanel6.Dock = DockStyle.Fill;
             tableLayoutPanel6.Location = new Point(307, 261);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -259,17 +267,33 @@
             tableLayoutPanel6.Size = new Size(299, 80);
             tableLayoutPanel6.TabIndex = 11;
             // 
-            // button4
+            // TriggerAlarmButton
             // 
-            button4.BackColor = Color.Yellow;
-            button4.Dock = DockStyle.Fill;
-            button4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(152, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(144, 34);
-            button4.TabIndex = 10;
-            button4.Text = "Silence Alarm";
-            button4.UseVisualStyleBackColor = false;
+            TriggerAlarmButton.BackColor = SystemColors.Window;
+            TriggerAlarmButton.Dock = DockStyle.Fill;
+            TriggerAlarmButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TriggerAlarmButton.ForeColor = Color.Red;
+            TriggerAlarmButton.Location = new Point(3, 3);
+            TriggerAlarmButton.Name = "TriggerAlarmButton";
+            TriggerAlarmButton.Size = new Size(143, 34);
+            TriggerAlarmButton.TabIndex = 11;
+            TriggerAlarmButton.Text = "Trigger Alarm";
+            TriggerAlarmButton.UseVisualStyleBackColor = false;
+            TriggerAlarmButton.Click += TriggerAlarmButton_Click;
+            // 
+            // SilenceAlarm
+            // 
+            SilenceAlarm.BackColor = Color.Yellow;
+            SilenceAlarm.Dock = DockStyle.Fill;
+            SilenceAlarm.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SilenceAlarm.Location = new Point(152, 3);
+            SilenceAlarm.Name = "SilenceAlarm";
+            SilenceAlarm.Size = new Size(144, 34);
+            SilenceAlarm.TabIndex = 10;
+            SilenceAlarm.Text = "Silence Alarm";
+            SilenceAlarm.UseVisualStyleBackColor = false;
+            SilenceAlarm.Visible = false;
+            SilenceAlarm.Click += button4_Click;
             // 
             // Form2
             // 
@@ -297,19 +321,20 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox DoorLockStatusText;
+        private TextBox AlarmStatusText;
+        private TextBox RemoteStartStatusText;
+        private TextBox NotAlarmingTextIndicator;
         private TableLayoutPanel tableLayoutPanel4;
         private TableLayoutPanel tableLayoutPanel3;
-        private Button button1;
+        private Button LockUnlockButton;
         private TableLayoutPanel tableLayoutPanel2;
-        private Button button3;
-        private Button button2;
+        private Button EnableDisableButton;
+        private Button ArmDisarmButton;
         private TableLayoutPanel tableLayoutPanel5;
-        private TextBox textBox6;
+        private TextBox AlarmingTextIndicator;
         private TableLayoutPanel tableLayoutPanel6;
-        private Button button4;
+        private Button SilenceAlarm;
+        private Button TriggerAlarmButton;
     }
 }
