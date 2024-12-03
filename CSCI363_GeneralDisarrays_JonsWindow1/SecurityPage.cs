@@ -14,7 +14,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
     {
         //flags to track and toggle state
         bool lockedDoors = true, armedAlarm = true, enabledRemoteStart = true, alarmActivated = true;
-        public Form2()
+        public SecurityPage()
         {
             InitializeComponent();
         }
