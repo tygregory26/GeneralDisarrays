@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSCI363_GeneralDisarrays_JonsWindow1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f19141da966547be1fe19ac27a9d419e40569161")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7554eb3bd9be54f29b3a4b593c7c6d49242f945")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSCI363_GeneralDisarrays_JonsWindow1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSCI363_GeneralDisarrays_JonsWindow1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

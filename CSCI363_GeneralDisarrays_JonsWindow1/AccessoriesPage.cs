@@ -246,30 +246,44 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void startRemoteStartButton_Click(object sender, EventArgs e)
         {
-            if (vehicleRunning)
+            if (remoteStartEnabled)
             {
-                remoteStartOutputListBox.Items.Add("Vehicle is already running...");
-            }
+                if (vehicleRunning)
+                {
+                    remoteStartOutputListBox.Items.Add("Vehicle is already running...");
+                }
+                else
+                {
+                    remoteStartOutputListBox.Items.Add("Attempting to start vehicle...");
+                    remoteStartOutputListBox.Items.Add("Vehicle started successfully!");
+                    vehicleRunning = true;
+                }
+            } 
             else
             {
-                remoteStartOutputListBox.Items.Add("Attempting to start vehicle...");
-                remoteStartOutputListBox.Items.Add("Vehicle started successfully!");
-                vehicleRunning = true;
+                remoteStartOutputListBox.Items.Add("Remote start is disabled.");
             }
 
         }
 
         private void stopRemoteStartButton_Click(object sender, EventArgs e)
         {
-            if (vehicleRunning)
+            if (remoteStartEnabled)
             {
-                remoteStartOutputListBox.Items.Add("Attempting to stop vehicle...");
-                remoteStartOutputListBox.Items.Add("Vehicle is off.");
-                vehicleRunning = false;
-            }
+                if (vehicleRunning)
+                {
+                    remoteStartOutputListBox.Items.Add("Attempting to stop vehicle...");
+                    remoteStartOutputListBox.Items.Add("Vehicle is off.");
+                    vehicleRunning = false;
+                }
+                else
+                {
+                    remoteStartOutputListBox.Items.Add("Vehicle is not currently running...");
+                }
+            } 
             else
             {
-                remoteStartOutputListBox.Items.Add("Vehicle is not currently running...");
+                remoteStartOutputListBox.Items.Add("Remote start is disabled.");
             }
         }
     }
