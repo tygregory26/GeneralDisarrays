@@ -12,6 +12,9 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 {
     public partial class AccessoriesPage : Form
     {
+        bool vehicleRunning = false;
+        bool doorsLocked = true;
+        bool remoteStartEnabled = true;
         bool rearDriverUp = false, rearDriverDown = false, rearPassengerUp = false, rearPassengerDown = false;
         bool frontDriverUp = false, frontDriverDown = false, frontPassengerUp = false, frontPassengerDown = false;
         String windowMid = "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\WIndowForSecurityPane.png";
@@ -24,6 +27,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void upRearDriverButton_Click(object sender, EventArgs e)
         {
+            //increment window up one level per click (down to mid to up)
             if (rearDriverUp)
             {
                 //already up so do nothing
@@ -42,6 +46,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void upRearPassengerButton_Click(object sender, EventArgs e)
         {
+            //increment window up one level per click (down to mid to up)
             if (rearPassengerUp)
             {
                 //already up so do nothing
@@ -60,6 +65,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void upFrontDriverButton_Click(object sender, EventArgs e)
         {
+            //increment window up one level per click (down to mid to up)
             if (frontDriverUp)
             {
                 //already up so do nothing
@@ -78,6 +84,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void upFrontPassengerButton_Click(object sender, EventArgs e)
         {
+            //increment window up one level per click (down to mid to up)
             if (frontPassengerUp)
             {
                 //already up so do nothing
@@ -96,6 +103,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void downRearDriverButton_Click(object sender, EventArgs e)
         {
+            //increment window down one level per click (up to mid to down)
             if (rearDriverDown)
             {
                 //already down so do nothing
@@ -114,6 +122,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void downRearPassengerButton_Click(object sender, EventArgs e)
         {
+            //increment window down one level per click (up to mid to down)
             if (rearPassengerDown)
             {
                 //already down so do nothing
@@ -132,6 +141,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void downFrontDriverButton_Click(object sender, EventArgs e)
         {
+            //increment window down one level per click (up to mid to down)
             if (frontDriverDown)
             {
                 //already down so do nothing
@@ -150,6 +160,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void downFrontPassengerButton_Click(object sender, EventArgs e)
         {
+            //increment window down one level per click (up to mid to down)
             if (frontPassengerDown)
             {
                 //already down so do nothing
@@ -168,6 +179,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void allUpButton_Click(object sender, EventArgs e)
         {
+            //Change all windows to fully closed
             pictureBoxFrontPassenger.Load(windowClosed);
             pictureBoxFrontDriver.Load(windowClosed);
             pictureBoxRearPassenger.Load(windowClosed);
@@ -184,6 +196,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void allDownButton_Click(object sender, EventArgs e)
         {
+            //Change all windows to fully open
             pictureBoxFrontPassenger.Load(windowOpen);
             pictureBoxFrontDriver.Load(windowOpen);
             pictureBoxRearPassenger.Load(windowOpen);
@@ -196,6 +209,68 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             rearPassengerUp = false;
             frontPassengerDown = true;
             frontPassengerUp = false;
+        }
+
+        private void changeRemoteStatusButton_Click(object sender, EventArgs e)
+        {
+            //Toggle if the remote start system is enabled or disabled and update the labels as needed
+            if (remoteStartEnabled)
+            {
+                remoteStartEnabled = false;
+                changeRemoteStatusButton.Text = ("Enable");
+                remoteStartStatusTextBox.Text = ("Remote Start is: Disabled");
+            }
+            else
+            {
+                remoteStartEnabled = true;
+                changeRemoteStatusButton.Text = ("Disable");
+                remoteStartStatusTextBox.Text = ("Remote Start is: Enabled");
+            }
+        }
+
+        private void lockDoorsButton_Click(object sender, EventArgs e)
+        {
+            //Change font to bold to show selected choice, unbold the other
+            doorsLocked = true;
+            lockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            unlockDoorsButton.Font = new Font("Segoe UI", 20.25F);
+        }
+
+        private void unlockDoorsButton_Click(object sender, EventArgs e)
+        {
+            //Change font to bold to show selected choice, unbold the other
+            doorsLocked = false;
+            unlockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lockDoorsButton.Font = new Font("Segoe UI", 20.25F);
+        }
+
+        private void startRemoteStartButton_Click(object sender, EventArgs e)
+        {
+            if (vehicleRunning)
+            {
+                remoteStartOutputListBox.Items.Add("Vehicle is already running...");
+            }
+            else
+            {
+                remoteStartOutputListBox.Items.Add("Attempting to start vehicle...");
+                remoteStartOutputListBox.Items.Add("Vehicle started successfully!");
+                vehicleRunning = true;
+            }
+
+        }
+
+        private void stopRemoteStartButton_Click(object sender, EventArgs e)
+        {
+            if (vehicleRunning)
+            {
+                remoteStartOutputListBox.Items.Add("Attempting to stop vehicle...");
+                remoteStartOutputListBox.Items.Add("Vehicle is off.");
+                vehicleRunning = false;
+            }
+            else
+            {
+                remoteStartOutputListBox.Items.Add("Vehicle is not currently running...");
+            }
         }
     }
 }

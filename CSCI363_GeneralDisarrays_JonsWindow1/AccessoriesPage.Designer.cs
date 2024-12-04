@@ -60,8 +60,8 @@
             unlockDoorsButton = new Button();
             lockDoorsButton = new Button();
             tableLayoutPanel10 = new TableLayoutPanel();
-            remoteStartChangeStatusButton = new TextBox();
             remoteStartStatusTextBox = new TextBox();
+            changeRemoteStatusButton = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
             stopRemoteStartButton = new Button();
             startRemoteStartButton = new Button();
@@ -316,12 +316,13 @@
             // 
             // textBox2
             // 
+            textBox2.BorderStyle = BorderStyle.None;
             textBox2.Dock = DockStyle.Fill;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.Location = new Point(376, 3);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(247, 29);
+            textBox2.Size = new Size(247, 22);
             textBox2.TabIndex = 3;
             textBox2.TabStop = false;
             textBox2.Text = "Front";
@@ -329,12 +330,13 @@
             // 
             // textBox3
             // 
+            textBox3.BorderStyle = BorderStyle.None;
             textBox3.Dock = DockStyle.Fill;
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox3.Location = new Point(3, 3);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(247, 29);
+            textBox3.Size = new Size(247, 22);
             textBox3.TabIndex = 4;
             textBox3.TabStop = false;
             textBox3.Text = "Rear";
@@ -342,24 +344,26 @@
             // 
             // textBox4
             // 
-            textBox4.Dock = DockStyle.Fill;
+            textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(629, 33);
+            textBox4.Location = new Point(629, 73);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(79, 29);
+            textBox4.Size = new Size(79, 22);
             textBox4.TabIndex = 7;
             textBox4.TabStop = false;
             textBox4.Text = "Driver";
             // 
             // textBox5
             // 
-            textBox5.Dock = DockStyle.Fill;
+            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(629, 142);
+            textBox5.Location = new Point(629, 183);
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
-            textBox5.Size = new Size(79, 27);
+            textBox5.Size = new Size(79, 20);
             textBox5.TabIndex = 8;
             textBox5.TabStop = false;
             textBox5.Text = "Passenger";
@@ -465,25 +469,27 @@
             unlockDoorsButton.TabIndex = 1;
             unlockDoorsButton.Text = "Unlock";
             unlockDoorsButton.UseVisualStyleBackColor = true;
+            unlockDoorsButton.Click += unlockDoorsButton_Click;
             // 
             // lockDoorsButton
             // 
             lockDoorsButton.Dock = DockStyle.Fill;
-            lockDoorsButton.Font = new Font("Segoe UI", 20.25F);
+            lockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lockDoorsButton.Location = new Point(3, 3);
             lockDoorsButton.Name = "lockDoorsButton";
             lockDoorsButton.Size = new Size(164, 69);
             lockDoorsButton.TabIndex = 0;
             lockDoorsButton.Text = "Lock";
             lockDoorsButton.UseVisualStyleBackColor = true;
+            lockDoorsButton.Click += lockDoorsButton_Click;
             // 
             // tableLayoutPanel10
             // 
             tableLayoutPanel10.ColumnCount = 1;
             tableLayoutPanel3.SetColumnSpan(tableLayoutPanel10, 2);
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.Controls.Add(remoteStartChangeStatusButton, 0, 1);
             tableLayoutPanel10.Controls.Add(remoteStartStatusTextBox, 0, 0);
+            tableLayoutPanel10.Controls.Add(changeRemoteStatusButton, 0, 1);
             tableLayoutPanel10.Dock = DockStyle.Fill;
             tableLayoutPanel10.Location = new Point(3, 159);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -493,33 +499,33 @@
             tableLayoutPanel10.Size = new Size(346, 151);
             tableLayoutPanel10.TabIndex = 15;
             // 
-            // remoteStartChangeStatusButton
-            // 
-            remoteStartChangeStatusButton.Anchor = AnchorStyles.None;
-            remoteStartChangeStatusButton.BackColor = SystemColors.Menu;
-            remoteStartChangeStatusButton.BorderStyle = BorderStyle.None;
-            remoteStartChangeStatusButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remoteStartChangeStatusButton.Location = new Point(3, 102);
-            remoteStartChangeStatusButton.Name = "remoteStartChangeStatusButton";
-            remoteStartChangeStatusButton.Size = new Size(340, 22);
-            remoteStartChangeStatusButton.TabIndex = 1;
-            remoteStartChangeStatusButton.Text = "Disable";
-            remoteStartChangeStatusButton.TextAlign = HorizontalAlignment.Center;
-            // 
             // remoteStartStatusTextBox
             // 
             remoteStartStatusTextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             remoteStartStatusTextBox.BackColor = SystemColors.Menu;
             remoteStartStatusTextBox.BorderStyle = BorderStyle.None;
-            remoteStartStatusTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remoteStartStatusTextBox.Location = new Point(3, 26);
+            remoteStartStatusTextBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            remoteStartStatusTextBox.Location = new Point(3, 23);
             remoteStartStatusTextBox.Name = "remoteStartStatusTextBox";
             remoteStartStatusTextBox.ReadOnly = true;
-            remoteStartStatusTextBox.Size = new Size(340, 22);
+            remoteStartStatusTextBox.Size = new Size(340, 28);
             remoteStartStatusTextBox.TabIndex = 0;
             remoteStartStatusTextBox.TabStop = false;
-            remoteStartStatusTextBox.Text = "Remote Start is Enabled";
+            remoteStartStatusTextBox.Text = "Remote Start is: Enabled";
             remoteStartStatusTextBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // changeRemoteStatusButton
+            // 
+            changeRemoteStatusButton.Dock = DockStyle.Fill;
+            changeRemoteStatusButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            changeRemoteStatusButton.Location = new Point(3, 78);
+            changeRemoteStatusButton.Name = "changeRemoteStatusButton";
+            changeRemoteStatusButton.Size = new Size(340, 70);
+            changeRemoteStatusButton.TabIndex = 1;
+            changeRemoteStatusButton.TabStop = false;
+            changeRemoteStatusButton.Text = "Disable";
+            changeRemoteStatusButton.UseVisualStyleBackColor = true;
+            changeRemoteStatusButton.Click += changeRemoteStatusButton_Click;
             // 
             // tableLayoutPanel4
             // 
@@ -551,6 +557,7 @@
             stopRemoteStartButton.TabIndex = 16;
             stopRemoteStartButton.Text = "Stop";
             stopRemoteStartButton.UseVisualStyleBackColor = false;
+            stopRemoteStartButton.Click += stopRemoteStartButton_Click;
             // 
             // startRemoteStartButton
             // 
@@ -563,6 +570,7 @@
             startRemoteStartButton.TabIndex = 15;
             startRemoteStartButton.Text = "Start";
             startRemoteStartButton.UseVisualStyleBackColor = false;
+            startRemoteStartButton.Click += startRemoteStartButton_Click;
             // 
             // remoteStartTextBox
             // 
@@ -679,10 +687,10 @@
         private Button lockDoorsButton;
         private TableLayoutPanel tableLayoutPanel10;
         private TextBox remoteStartStatusTextBox;
-        private TextBox remoteStartChangeStatusButton;
         private TextBox remoteStartTextBox;
         private Button stopRemoteStartButton;
         private Button startRemoteStartButton;
         private ListBox remoteStartOutputListBox;
+        private Button changeRemoteStatusButton;
     }
 }
