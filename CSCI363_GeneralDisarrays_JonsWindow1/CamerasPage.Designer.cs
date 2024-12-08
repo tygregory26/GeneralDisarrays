@@ -78,7 +78,6 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.IMG_20170811_094114_2;
             pictureBox1.Location = new Point(149, 53);
             pictureBox1.Name = "pictureBox1";
             tableLayoutPanel1.SetRowSpan(pictureBox1, 3);
@@ -91,7 +90,6 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Image = Properties.Resources.IMG_20170726_094506_12;
             pictureBox2.Location = new Point(3, 53);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(140, 105);
@@ -104,7 +102,6 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Dock = DockStyle.Fill;
-            pictureBox3.Image = Properties.Resources.IMG_20170726_094506_12;
             pictureBox3.Location = new Point(3, 164);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(140, 105);
@@ -116,7 +113,6 @@
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Dock = DockStyle.Fill;
-            pictureBox4.Image = Properties.Resources.IMG_20170726_094506_12;
             pictureBox4.Location = new Point(3, 275);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(140, 105);
@@ -128,7 +124,6 @@
             // 
             pictureBox5.BorderStyle = BorderStyle.Fixed3D;
             pictureBox5.Dock = DockStyle.Fill;
-            pictureBox5.Image = Properties.Resources.IMG_20170727_094956_12;
             pictureBox5.Location = new Point(465, 275);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(141, 105);
@@ -140,7 +135,6 @@
             // 
             pictureBox6.BorderStyle = BorderStyle.Fixed3D;
             pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Image = Properties.Resources.IMG_20170727_094956_12;
             pictureBox6.Location = new Point(465, 164);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(141, 105);
@@ -152,7 +146,6 @@
             // 
             pictureBox7.BorderStyle = BorderStyle.Fixed3D;
             pictureBox7.Dock = DockStyle.Fill;
-            pictureBox7.Image = Properties.Resources.IMG_20170727_094956_12;
             pictureBox7.Location = new Point(465, 53);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(141, 105);

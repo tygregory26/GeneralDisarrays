@@ -17,9 +17,9 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
         bool remoteStartEnabled = true;
         bool rearDriverUp = false, rearDriverDown = false, rearPassengerUp = false, rearPassengerDown = false;
         bool frontDriverUp = false, frontDriverDown = false, frontPassengerUp = false, frontPassengerDown = false;
-        String windowMid = "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\WIndowForSecurityPane.png";
-        String windowClosed = "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\WIndowForSecurityPaneClosed.png";
-        String windowOpen = "C:\\Users\\Razor\\source\\repos\\GeneralDisarrays\\CSCI363_GeneralDisarrays_JonsWindow1\\WIndowForSecurityPaneOpen.png";
+        String windowMid = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPane.png";
+        String windowClosed = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneClosed.png";
+        String windowOpen = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneOpen.png";
         public AccessoriesPage()
         {
             InitializeComponent();
