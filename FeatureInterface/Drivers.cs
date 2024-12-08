@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ty;
 
 namespace FeatureInterface
 {
@@ -30,6 +31,13 @@ namespace FeatureInterface
         private void geoFencShortCutButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            Screen newScreen = Screen.HOME;
+            Hide();
+            FeatureInterface.switchScreen(newScreen);
         }
     }
 }

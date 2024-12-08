@@ -62,7 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(276, 64);
+            label1.Location = new Point(312, 63);
             label1.Name = "label1";
             label1.Size = new Size(212, 38);
             label1.TabIndex = 0;
@@ -189,6 +189,7 @@
             homeButton.TabIndex = 0;
             homeButton.Text = "Home";
             homeButton.UseVisualStyleBackColor = true;
+            homeButton.Click += homeButton_Click;
             // 
             // label2
             // 
