@@ -449,15 +449,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(460, 126);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 24);
-            this.menuStrip1.TabIndex = 24;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -480,8 +471,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Status";
             this.Text = "Status Of Vehicle";
