@@ -23,12 +23,12 @@ namespace FeatureInterface
             Application.Run(new Program());
         }
 
-        Status statusForm;
-        Home homeForm;
-        Owner ownerForm;
-        Drivers driverForm;
-        ManageVehicles manageVehiclesForm;
-        LogsPage logsForm;
+        static Status statusForm;
+        static Home homeForm;
+        static Owner ownerForm;
+        static Drivers driverForm;
+        static ManageVehicles manageVehiclesForm;
+        static LogsPage logsForm;
         //AccessoryPage accForm;
         //SecurityPage securityForm;
         //CamerasPage camerasForm;
@@ -45,7 +45,7 @@ namespace FeatureInterface
             //camerasForm = new CamerasPage();
         }
 
-        public void SwitchScreen(Enum newScreen)
+        public static void SwitchScreen(Enum newScreen)
         {
             switch (newScreen)
             {
