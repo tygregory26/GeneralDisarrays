@@ -64,26 +64,25 @@
             tableLayoutPanel1.Controls.Add(textBox1, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3344421F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3344421F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3311119F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
-            tableLayoutPanel1.Size = new Size(696, 579);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            tableLayoutPanel1.Size = new Size(609, 434);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(170, 71);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Image = Properties.Resources.IMG_20170811_094114_2;
+            pictureBox1.Location = new Point(149, 53);
             pictureBox1.Name = "pictureBox1";
             tableLayoutPanel1.SetRowSpan(pictureBox1, 3);
-            pictureBox1.Size = new Size(355, 436);
+            pictureBox1.Size = new Size(310, 327);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -92,10 +91,10 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Location = new Point(3, 71);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Image = Properties.Resources.IMG_20170726_094506_12;
+            pictureBox2.Location = new Point(3, 53);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(161, 140);
+            pictureBox2.Size = new Size(140, 105);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -105,10 +104,10 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Dock = DockStyle.Fill;
-            pictureBox3.Location = new Point(3, 219);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Image = Properties.Resources.IMG_20170726_094506_12;
+            pictureBox3.Location = new Point(3, 164);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(161, 140);
+            pictureBox3.Size = new Size(140, 105);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -117,10 +116,10 @@
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Dock = DockStyle.Fill;
-            pictureBox4.Location = new Point(3, 367);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Image = Properties.Resources.IMG_20170726_094506_12;
+            pictureBox4.Location = new Point(3, 275);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(161, 140);
+            pictureBox4.Size = new Size(140, 105);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
@@ -129,10 +128,10 @@
             // 
             pictureBox5.BorderStyle = BorderStyle.Fixed3D;
             pictureBox5.Dock = DockStyle.Fill;
-            pictureBox5.Location = new Point(531, 367);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
+            pictureBox5.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox5.Location = new Point(465, 275);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(162, 140);
+            pictureBox5.Size = new Size(141, 105);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
@@ -141,10 +140,10 @@
             // 
             pictureBox6.BorderStyle = BorderStyle.Fixed3D;
             pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Location = new Point(531, 219);
-            pictureBox6.Margin = new Padding(3, 4, 3, 4);
+            pictureBox6.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox6.Location = new Point(465, 164);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(162, 140);
+            pictureBox6.Size = new Size(141, 105);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
@@ -153,10 +152,10 @@
             // 
             pictureBox7.BorderStyle = BorderStyle.Fixed3D;
             pictureBox7.Dock = DockStyle.Fill;
-            pictureBox7.Location = new Point(531, 71);
-            pictureBox7.Margin = new Padding(3, 4, 3, 4);
+            pictureBox7.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox7.Location = new Point(465, 53);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(162, 140);
+            pictureBox7.Size = new Size(141, 105);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 7;
             pictureBox7.TabStop = false;
@@ -165,11 +164,10 @@
             // 
             textBox1.Dock = DockStyle.Fill;
             textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(170, 4);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(149, 3);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(355, 52);
+            textBox1.Size = new Size(310, 43);
             textBox1.TabIndex = 8;
             textBox1.TabStop = false;
             textBox1.Text = "Video Feeds";
@@ -184,11 +182,10 @@
             // 
             // CamerasPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(696, 579);
+            ClientSize = new Size(609, 434);
             Controls.Add(tableLayoutPanel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "CamerasPage";
             Text = "Video Feeds";
             tableLayoutPanel1.ResumeLayout(false);

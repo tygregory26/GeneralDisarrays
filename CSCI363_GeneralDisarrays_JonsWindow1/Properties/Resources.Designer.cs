@@ -59,5 +59,35 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20170726_094506_12 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170726_094506_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20170727_094956_12 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170727_094956_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20170811_094114_2 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170811_094114_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
