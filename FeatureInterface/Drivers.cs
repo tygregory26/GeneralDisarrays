@@ -35,9 +35,8 @@ namespace FeatureInterface
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            Screen newScreen = Screen.HOME;
-            Hide();
-            FeatureInterface.switchScreen(newScreen);
+            Program.ScreenPage displayScreen = Program.ScreenPage.HOME;
+            Program.SwitchScreen(displayScreen);
         }
     }
 }

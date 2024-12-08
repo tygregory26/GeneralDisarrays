@@ -1,8 +1,8 @@
 namespace FeatureInterface
 {
-    public partial class mainWindow : Form
+    public partial class LogsPage : Form
     {
-        public mainWindow()
+        public LogsPage()
         {
             InitializeComponent();
         }

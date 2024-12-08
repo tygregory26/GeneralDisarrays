@@ -2,7 +2,7 @@ using Ty;
 
 namespace FeatureInterface
 {
-    internal static class Program
+    public class Program : Form
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -17,19 +17,142 @@ namespace FeatureInterface
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Status statusForm = new Status();
-            Home homeForm = new Home();
-            Owner ownerForm = new Owner();
-            Drivers driverForm = new Drivers();
-            ManageVehicles manageVehiclesForm = new ManageVehicles();
 
             //form1.Show();
             //ownerForm.Show();
-            Application.Run(driverForm);
+            Application.Run(new Program());
         }
-    }
 
-    enum Screen
+        Status statusForm;
+        Home homeForm;
+        Owner ownerForm;
+        Drivers driverForm;
+        ManageVehicles manageVehiclesForm;
+        LogsPage logsForm;
+        //AccessoryPage accForm;
+        //SecurityPage securityForm;
+        //CamerasPage camerasForm;
+        public Program()
+        {
+            statusForm = new Status();
+            homeForm = new Home();
+            driverForm = new Drivers();
+            ownerForm = new Owner();
+            manageVehiclesForm = new ManageVehicles();
+            logsForm = new LogsPage();
+            //accForm = new AccessoryPage();
+            //securityForm = new SecurityPage();
+            //camerasForm = new CamerasPage();
+        }
+
+        public void SwitchScreen(Enum newScreen)
+        {
+            switch (newScreen)
+            {
+                case ScreenPage.HOME:
+                    homeForm.Show();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    ownerForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.OWNER:
+                    ownerForm.Show();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.STATUS:
+                    statusForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.DRIVERS:
+                    driverForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.VEHICLES:
+                    manageVehiclesForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.LOGS:
+                    logsForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.CAMERAS:
+                    //camerasForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //securityForm.Hide();
+                    break;
+                case ScreenPage.ACCESSORY:
+                    //accForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //securityForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+                case ScreenPage.SECURITY:
+                    //securityForm.Show();
+                    ownerForm.Hide();
+                    homeForm.Hide();
+                    statusForm.Hide();
+                    driverForm.Hide();
+                    manageVehiclesForm.Hide();
+                    logsForm.Hide();
+                    //accForm.Hide();
+                    //camerasForm.Hide();
+                    break;
+            }
+        }
+
+
+        public enum ScreenPage
         {
             HOME,
             OWNER,
@@ -41,4 +164,5 @@ namespace FeatureInterface
             ACCESSORY,
             SECURITY
         }
+    }
 }

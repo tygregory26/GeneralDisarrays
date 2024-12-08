@@ -1,6 +1,6 @@
 ﻿namespace FeatureInterface
 {
-    partial class mainWindow
+    partial class LogsPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -50,6 +50,7 @@
             gpsButton = new Button();
             backButton = new Button();
             homeButton = new Button();
+            helpProvider1 = new HelpProvider();
             NavPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -269,7 +270,7 @@
             homeButton.Text = "Home";
             homeButton.UseVisualStyleBackColor = true;
             // 
-            // mainWindow
+            // LogsPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -286,7 +287,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "mainWindow";
+            Name = "LogsPage";
             Text = "Features";
             NavPanel.ResumeLayout(false);
             ResumeLayout(false);
@@ -317,5 +318,6 @@
         private Button gpsButton;
         private Button backButton;
         private Button homeButton;
+        private HelpProvider helpProvider1;
     }
 }
