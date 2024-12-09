@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD:FeatureInterface/Properties/Resources.Designer.cs
 namespace FeatureInterface.Properties {
+=======
+namespace CSCI363_GeneralDisarrays_JonsWindow1.Properties {
+>>>>>>> JonTestBranch:CSCI363_GeneralDisarrays_JonsWindow1/Properties/Resources.Designer.cs
     using System;
     
     
@@ -39,7 +43,11 @@ namespace FeatureInterface.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
+<<<<<<< HEAD:FeatureInterface/Properties/Resources.Designer.cs
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FeatureInterface.Properties.Resources", typeof(Resources).Assembly);
+=======
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CSCI363_GeneralDisarrays_JonsWindow1.Properties.Resources", typeof(Resources).Assembly);
+>>>>>>> JonTestBranch:CSCI363_GeneralDisarrays_JonsWindow1/Properties/Resources.Designer.cs
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +71,15 @@ namespace FeatureInterface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD:FeatureInterface/Properties/Resources.Designer.cs
         internal static System.Drawing.Bitmap Check_Engine_Light_PNG_Photo {
             get {
                 object obj = ResourceManager.GetObject("Check-Engine-Light-PNG-Photo", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap IMG_20170726_094506_12 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170726_094506_12", resourceCulture);
+>>>>>>> JonTestBranch:CSCI363_GeneralDisarrays_JonsWindow1/Properties/Resources.Designer.cs
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +87,15 @@ namespace FeatureInterface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD:FeatureInterface/Properties/Resources.Designer.cs
         internal static System.Drawing.Bitmap Geofencing {
             get {
                 object obj = ResourceManager.GetObject("Geofencing", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap IMG_20170727_094956_12 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170727_094956_12", resourceCulture);
+>>>>>>> JonTestBranch:CSCI363_GeneralDisarrays_JonsWindow1/Properties/Resources.Designer.cs
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,6 +103,7 @@ namespace FeatureInterface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD:FeatureInterface/Properties/Resources.Designer.cs
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -106,6 +127,11 @@ namespace FeatureInterface.Properties {
         internal static System.Drawing.Bitmap windshieldFluid {
             get {
                 object obj = ResourceManager.GetObject("windshieldFluid", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap IMG_20170811_094114_2 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20170811_094114_2", resourceCulture);
+>>>>>>> JonTestBranch:CSCI363_GeneralDisarrays_JonsWindow1/Properties/Resources.Designer.cs
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
