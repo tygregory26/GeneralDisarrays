@@ -1,5 +1,0 @@
-/*
-Test file to see if I can fetch
-*/
-
-Updated on RG's branch
