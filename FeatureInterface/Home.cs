@@ -1,15 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace FeatureInterface
 {
-    public partial class LogsPage : Form
+    public partial class Home : Form
     {
         MainWindow mainPage;
-        public LogsPage(MainWindow mainPage)
+        public Home(MainWindow mainPage)
         {
-            InitializeComponent();
             this.mainPage = mainPage;
+            InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
         {
 
         }
@@ -18,6 +38,12 @@ namespace FeatureInterface
         {
             MainWindow.ScreenPage display = MainWindow.ScreenPage.GPS;
             mainPage.SwitchScreen(display);
+        }
+
+        private void geoFencShortCutButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.GPS;
+            mainPage.SwitchScreen(displayScreen);
         }
 
         private void homeButton_Click(object sender, EventArgs e)
@@ -29,6 +55,12 @@ namespace FeatureInterface
         private void accButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.ACCESSORY;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);
         }
 
@@ -62,10 +94,5 @@ namespace FeatureInterface
             mainPage.SwitchScreen(displayScreen);
         }
 
-        private void vehNavButton_Click(object sender, EventArgs e)
-        {
-            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
-            mainPage.SwitchScreen(displayScreen);
-        }
     }
 }

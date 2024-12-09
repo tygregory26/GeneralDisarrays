@@ -11,9 +11,9 @@ namespace Ty
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Form1 form1 = new Form1();
+            Status form1 = new Status();
             Home homeForm = new Home();
-            Owner ownerForm = new Owner();
+            GPS ownerForm = new GPS();
 
             form1.Show();
             ownerForm.Show();

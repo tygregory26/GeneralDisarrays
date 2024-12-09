@@ -1,6 +1,6 @@
 ﻿namespace FeatureInterface
 {
-    partial class ManageVehicles
+    partial class GPS
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,22 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            comboBox1 = new ComboBox();
             label2 = new Label();
             label3 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            label8 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            button2 = new Button();
+            button1 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
             NavPanel = new Panel();
             secNavButton = new Button();
             vehNavButton = new Button();
@@ -64,151 +63,191 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(286, 75);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label1.Location = new Point(399, 62);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(194, 32);
-            label1.TabIndex = 15;
-            label1.Text = "Manage Vehicles";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Mine - Jeep Cherokee", "Wife's - Chevy Silverado" });
-            comboBox1.Location = new Point(143, 142);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(558, 28);
-            comboBox1.TabIndex = 16;
+            label1.Size = new Size(99, 31);
+            label1.TabIndex = 1;
+            label1.Text = "Owner";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(143, 256);
+            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label2.Location = new Point(67, 148);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(45, 20);
-            label2.TabIndex = 17;
-            label2.Text = "Make";
+            label2.Size = new Size(182, 31);
+            label2.TabIndex = 2;
+            label2.Text = "Show history";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(143, 308);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label3.Location = new Point(17, 235);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
-            label3.TabIndex = 18;
-            label3.Text = "Model";
+            label3.Size = new Size(44, 25);
+            label3.TabIndex = 3;
+            label3.Text = "For";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(73, 239);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(109, 27);
+            textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(192, 239);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(109, 27);
+            textBox2.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(143, 358);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label4.Location = new Point(73, 202);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(37, 20);
-            label4.TabIndex = 19;
-            label4.Text = "Year";
+            label4.Size = new Size(61, 25);
+            label4.TabIndex = 6;
+            label4.Text = "From";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(414, 201);
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label5.Location = new Point(187, 202);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(45, 20);
-            label5.TabIndex = 20;
-            label5.Text = "Color";
+            label5.Size = new Size(38, 25);
+            label5.TabIndex = 7;
+            label5.Text = "To";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(143, 201);
+            label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label6.Location = new Point(612, 125);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(75, 20);
-            label6.TabIndex = 21;
-            label6.Text = "Nickname";
+            label6.Size = new Size(237, 31);
+            label6.TabIndex = 13;
+            label6.Text = "Show geofencing";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(414, 256);
+            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label7.Location = new Point(645, 174);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(55, 20);
-            label7.TabIndex = 22;
-            label7.Text = "Plate #";
+            label7.Size = new Size(44, 25);
+            label7.TabIndex = 14;
+            label7.Text = "For";
             // 
-            // label8
+            // button2
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(414, 308);
-            label8.Name = "label8";
-            label8.Size = new Size(33, 20);
-            label8.TabIndex = 23;
-            label8.Text = "VIN";
+            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button2.Location = new Point(315, 201);
+            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Name = "button2";
+            button2.Size = new Size(183, 42);
+            button2.TabIndex = 10;
+            button2.Text = "Last week";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // textBox1
+            // button1
             // 
-            textBox1.Location = new Point(143, 224);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(226, 27);
-            textBox1.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(143, 279);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(226, 27);
-            textBox2.TabIndex = 25;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(143, 328);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(226, 27);
-            textBox3.TabIndex = 26;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(143, 381);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(226, 27);
-            textBox4.TabIndex = 27;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(414, 224);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(226, 27);
-            textBox5.TabIndex = 28;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(414, 278);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(226, 27);
-            textBox6.TabIndex = 29;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(414, 331);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(226, 27);
-            textBox7.TabIndex = 30;
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button1.Location = new Point(315, 149);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(183, 42);
+            button1.TabIndex = 11;
+            button1.Text = "Today";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(414, 375);
+            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button3.Location = new Point(315, 254);
+            button3.Margin = new Padding(4, 5, 4, 5);
             button3.Name = "button3";
-            button3.Size = new Size(120, 33);
-            button3.TabIndex = 31;
-            button3.Text = "Update Vehicle";
+            button3.Size = new Size(183, 42);
+            button3.TabIndex = 12;
+            button3.Text = "Last month";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(143, 433);
+            button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button4.Location = new Point(701, 169);
+            button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
-            button4.Size = new Size(129, 42);
-            button4.TabIndex = 32;
-            button4.Text = "Delete Vehicle";
+            button4.Size = new Size(103, 42);
+            button4.TabIndex = 15;
+            button4.Text = "Driver1";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button5.Location = new Point(701, 222);
+            button5.Margin = new Padding(4, 5, 4, 5);
+            button5.Name = "button5";
+            button5.Size = new Size(103, 42);
+            button5.TabIndex = 16;
+            button5.Text = "Driver2";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button6.Location = new Point(701, 274);
+            button6.Margin = new Padding(4, 5, 4, 5);
+            button6.Name = "button6";
+            button6.Size = new Size(103, 42);
+            button6.TabIndex = 17;
+            button6.Text = "Driver3";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button7.Location = new Point(684, 325);
+            button7.Margin = new Padding(4, 5, 4, 5);
+            button7.Name = "button7";
+            button7.Size = new Size(144, 75);
+            button7.TabIndex = 19;
+            button7.Text = "Edit geofencing";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button8.Location = new Point(684, 411);
+            button8.Margin = new Padding(4, 5, 4, 5);
+            button8.Name = "button8";
+            button8.Size = new Size(144, 108);
+            button8.TabIndex = 20;
+            button8.Text = "Update map from cloud";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // NavPanel
             // 
@@ -229,7 +268,7 @@
             NavPanel.Location = new Point(0, 0);
             NavPanel.Name = "NavPanel";
             NavPanel.Size = new Size(932, 49);
-            NavPanel.TabIndex = 33;
+            NavPanel.TabIndex = 21;
             // 
             // secNavButton
             // 
@@ -251,7 +290,7 @@
             vehNavButton.TabIndex = 20;
             vehNavButton.Text = "Vehicles";
             vehNavButton.UseVisualStyleBackColor = true;
-            vehNavButton.Click += VehNavButton_Click;
+            vehNavButton.Click += vehNavButton_Click;
             // 
             // driverNavButton
             // 
@@ -350,61 +389,56 @@
             homeButton.UseVisualStyleBackColor = true;
             homeButton.Click += homeButton_Click;
             // 
-            // ManageVehicles
+            // GPS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 553);
             Controls.Add(NavPanel);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
+            Controls.Add(button3);
+            Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(label5);
             Controls.Add(label4);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(comboBox1);
             Controls.Add(label1);
-            Name = "ManageVehicles";
-            Text = "ManageVehicles";
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "GPS";
+            Text = "Owner";
             NavPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private void VehNavButton_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
-        private Label label1;
-        private ComboBox comboBox1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private Button button3;
-        private Button button4;
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
         private Panel NavPanel;
         private Button secNavButton;
         private Button vehNavButton;
