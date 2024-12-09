@@ -37,7 +37,7 @@ namespace FeatureInterface
             mainPage.SwitchScreen(displayScreen);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void vehNavButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);

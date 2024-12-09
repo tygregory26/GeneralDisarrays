@@ -251,7 +251,7 @@
             vehNavButton.TabIndex = 20;
             vehNavButton.Text = "Vehicles";
             vehNavButton.UseVisualStyleBackColor = true;
-            vehNavButton.Click += VehNavButton_Click;
+            vehNavButton.Click += vehNavButton_Click;
             // 
             // driverNavButton
             // 
@@ -381,10 +381,6 @@
             PerformLayout();
         }
 
-        private void VehNavButton_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
         private Label label1;
