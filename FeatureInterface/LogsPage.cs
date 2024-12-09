@@ -32,12 +32,6 @@ namespace FeatureInterface
             mainPage.SwitchScreen(displayScreen);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
-            mainPage.SwitchScreen(displayScreen);
-        }
-
         private void secNavButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.SECURITY;
@@ -65,6 +59,12 @@ namespace FeatureInterface
         private void driverNavButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.DRIVERS;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void vehNavButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);
         }
     }

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Ty;
 
 namespace FeatureInterface
 {
@@ -23,6 +22,11 @@ namespace FeatureInterface
         private void geoFencShortCutButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.GPS;
+            mainPage.SwitchScreen(displayScreen);
+        }
+        private void VehShortcutButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);
         }
 
@@ -44,7 +48,7 @@ namespace FeatureInterface
             mainPage.SwitchScreen(displayScreen);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void vehNavButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);
@@ -77,12 +81,6 @@ namespace FeatureInterface
         private void driverNavButton_Click(object sender, EventArgs e)
         {
             MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.DRIVERS;
-            mainPage.SwitchScreen(displayScreen);
-        }
-
-        private void VehShortcutButton_Click(object sender, EventArgs e)
-        {
-            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
             mainPage.SwitchScreen(displayScreen);
         }
     }

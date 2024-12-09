@@ -39,7 +39,7 @@ namespace FeatureInterface
         {
             statusForm = new Status(this);
             homeForm = new Home(this);
-            gpsForm = new GPS();
+            gpsForm = new GPS(this);
             driversForm = new Drivers(this);
             driversForm.Show();
             manageVehiclesForm = new ManageVehicles(this);

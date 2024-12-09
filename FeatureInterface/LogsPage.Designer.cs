@@ -169,7 +169,7 @@
             NavPanel.Dock = DockStyle.Top;
             NavPanel.Location = new Point(0, 0);
             NavPanel.Name = "NavPanel";
-            NavPanel.Size = new Size(954, 49);
+            NavPanel.Size = new Size(932, 49);
             NavPanel.TabIndex = 14;
             // 
             // secNavButton
@@ -208,7 +208,7 @@
             // forwardButton
             // 
             forwardButton.Dock = DockStyle.Right;
-            forwardButton.Location = new Point(908, 0);
+            forwardButton.Location = new Point(886, 0);
             forwardButton.Name = "forwardButton";
             forwardButton.Size = new Size(46, 49);
             forwardButton.TabIndex = 13;
@@ -295,7 +295,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(954, 627);
+            ClientSize = new Size(932, 553);
             Controls.Add(NavPanel);
             Controls.Add(textBox3);
             Controls.Add(button4);

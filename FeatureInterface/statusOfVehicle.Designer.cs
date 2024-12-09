@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Status));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -60,11 +59,24 @@
             label17 = new Label();
             label19 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
+            NavPanel = new Panel();
+            secNavButton = new Button();
+            vehNavButton = new Button();
+            driverNavButton = new Button();
+            forwardButton = new Button();
+            logButton = new Button();
+            camButton = new Button();
+            statusButton = new Button();
+            accButton = new Button();
+            gpsButton = new Button();
+            backButton = new Button();
+            homeButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            NavPanel.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -93,7 +105,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(327, 361);
+            label3.Location = new Point(330, 52);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(241, 31);
@@ -162,15 +174,14 @@
             label7.Location = new Point(0, 534);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(1599, 20);
+            label7.Size = new Size(0, 20);
             label7.TabIndex = 8;
-            label7.Text = resources.GetString("label7.Text");
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(155, 495);
+            label8.Location = new Point(125, 360);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(149, 31);
@@ -181,7 +192,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(725, 495);
+            label9.Location = new Point(695, 360);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(180, 31);
@@ -227,7 +238,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(499, 599);
+            label13.Location = new Point(425, 464);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(0, 20);
@@ -237,7 +248,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(515, 554);
+            label14.Location = new Point(441, 419);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.RightToLeft = RightToLeft.Yes;
@@ -249,7 +260,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(515, 592);
+            label15.Location = new Point(441, 457);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.RightToLeft = RightToLeft.Yes;
@@ -261,7 +272,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(515, 631);
+            label16.Location = new Point(441, 496);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
             label16.RightToLeft = RightToLeft.Yes;
@@ -272,10 +283,11 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(183, 554);
+            pictureBox3.Image = Properties.Resources.images;
+            pictureBox3.Location = new Point(153, 419);
             pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(132, 86);
+            pictureBox3.Size = new Size(108, 86);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 20;
             pictureBox3.TabStop = false;
@@ -283,10 +295,11 @@
             // pictureBox2
             // 
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(333, 554);
+            pictureBox2.Image = Properties.Resources.windshieldFluid;
+            pictureBox2.Location = new Point(288, 419);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(132, 86);
+            pictureBox2.Size = new Size(116, 86);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
@@ -294,7 +307,8 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(33, 554);
+            pictureBox1.Image = Properties.Resources.Check_Engine_Light_PNG_Photo;
+            pictureBox1.Location = new Point(3, 419);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(132, 86);
@@ -315,7 +329,8 @@
             tableLayoutPanel2.Controls.Add(label18, 1, 0);
             tableLayoutPanel2.Controls.Add(label17, 0, 0);
             tableLayoutPanel2.Controls.Add(label19, 0, 1);
-            tableLayoutPanel2.Location = new Point(588, 559);
+            tableLayoutPanel2.Font = new Font("Segoe UI", 9F);
+            tableLayoutPanel2.Location = new Point(475, 419);
             tableLayoutPanel2.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 4;
@@ -323,7 +338,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
-            tableLayoutPanel2.Size = new Size(648, 129);
+            tableLayoutPanel2.Size = new Size(430, 129);
             tableLayoutPanel2.TabIndex = 22;
             // 
             // label21
@@ -334,7 +349,7 @@
             label21.Location = new Point(4, 97);
             label21.Margin = new Padding(4, 0, 4, 0);
             label21.Name = "label21";
-            label21.Size = new Size(316, 32);
+            label21.Size = new Size(207, 32);
             label21.TabIndex = 25;
             label21.Text = "Tire Pressure Status:";
             // 
@@ -343,36 +358,39 @@
             label24.AutoSize = true;
             label24.Dock = DockStyle.Fill;
             label24.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.Location = new Point(328, 33);
+            label24.Location = new Point(219, 33);
             label24.Margin = new Padding(4, 0, 4, 0);
             label24.Name = "label24";
-            label24.Size = new Size(316, 33);
+            label24.Size = new Size(207, 33);
             label24.TabIndex = 28;
             label24.Text = "Normal";
+            label24.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label22
             // 
             label22.AutoSize = true;
             label22.Dock = DockStyle.Fill;
             label22.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.Location = new Point(328, 66);
+            label22.Location = new Point(219, 66);
             label22.Margin = new Padding(4, 0, 4, 0);
             label22.Name = "label22";
-            label22.Size = new Size(316, 31);
+            label22.Size = new Size(207, 31);
             label22.TabIndex = 26;
             label22.Text = "Normal";
+            label22.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label23
             // 
             label23.AutoSize = true;
             label23.Dock = DockStyle.Fill;
             label23.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.Location = new Point(328, 97);
+            label23.Location = new Point(219, 97);
             label23.Margin = new Padding(4, 0, 4, 0);
             label23.Name = "label23";
-            label23.Size = new Size(316, 32);
+            label23.Size = new Size(207, 32);
             label23.TabIndex = 27;
             label23.Text = "Normal";
+            label23.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label20
             // 
@@ -382,7 +400,7 @@
             label20.Location = new Point(4, 66);
             label20.Margin = new Padding(4, 0, 4, 0);
             label20.Name = "label20";
-            label20.Size = new Size(316, 31);
+            label20.Size = new Size(207, 31);
             label20.TabIndex = 23;
             label20.Text = "Batt Volt Status:";
             // 
@@ -391,12 +409,13 @@
             label18.AutoSize = true;
             label18.Dock = DockStyle.Fill;
             label18.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(328, 0);
+            label18.Location = new Point(219, 0);
             label18.Margin = new Padding(4, 0, 4, 0);
             label18.Name = "label18";
-            label18.Size = new Size(316, 33);
+            label18.Size = new Size(207, 33);
             label18.TabIndex = 24;
             label18.Text = "90%";
+            label18.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label17
             // 
@@ -406,7 +425,7 @@
             label17.Location = new Point(4, 0);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(316, 33);
+            label17.Size = new Size(207, 33);
             label17.TabIndex = 23;
             label17.Text = "Oil Life:";
             // 
@@ -418,7 +437,7 @@
             label19.Location = new Point(4, 33);
             label19.Margin = new Padding(4, 0, 4, 0);
             label19.Name = "label19";
-            label19.Size = new Size(316, 33);
+            label19.Size = new Size(207, 33);
             label19.TabIndex = 23;
             label19.Text = "Oil Temp Status:";
             // 
@@ -433,7 +452,7 @@
             tableLayoutPanel1.Controls.Add(label10, 1, 0);
             tableLayoutPanel1.Controls.Add(label11, 1, 1);
             tableLayoutPanel1.Controls.Add(label12, 1, 2);
-            tableLayoutPanel1.Location = new Point(609, 122);
+            tableLayoutPanel1.Location = new Point(488, 122);
             tableLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 3;
@@ -443,11 +462,152 @@
             tableLayoutPanel1.Size = new Size(460, 158);
             tableLayoutPanel1.TabIndex = 23;
             // 
+            // NavPanel
+            // 
+            NavPanel.AutoSize = true;
+            NavPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            NavPanel.Controls.Add(secNavButton);
+            NavPanel.Controls.Add(vehNavButton);
+            NavPanel.Controls.Add(driverNavButton);
+            NavPanel.Controls.Add(forwardButton);
+            NavPanel.Controls.Add(logButton);
+            NavPanel.Controls.Add(camButton);
+            NavPanel.Controls.Add(statusButton);
+            NavPanel.Controls.Add(accButton);
+            NavPanel.Controls.Add(gpsButton);
+            NavPanel.Controls.Add(backButton);
+            NavPanel.Controls.Add(homeButton);
+            NavPanel.Dock = DockStyle.Top;
+            NavPanel.Location = new Point(0, 0);
+            NavPanel.Name = "NavPanel";
+            NavPanel.Size = new Size(932, 49);
+            NavPanel.TabIndex = 24;
+            // 
+            // secNavButton
+            // 
+            secNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            secNavButton.Location = new Point(786, 9);
+            secNavButton.Name = "secNavButton";
+            secNavButton.Size = new Size(81, 37);
+            secNavButton.TabIndex = 21;
+            secNavButton.Text = "Security";
+            secNavButton.UseVisualStyleBackColor = true;
+            secNavButton.Click += secNavButton_Click;
+            // 
+            // vehNavButton
+            // 
+            vehNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            vehNavButton.Location = new Point(699, 9);
+            vehNavButton.Name = "vehNavButton";
+            vehNavButton.Size = new Size(81, 37);
+            vehNavButton.TabIndex = 20;
+            vehNavButton.Text = "Vehicles";
+            vehNavButton.UseVisualStyleBackColor = true;
+            vehNavButton.Click += vehNavButton_Click;
+            // 
+            // driverNavButton
+            // 
+            driverNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            driverNavButton.Location = new Point(612, 9);
+            driverNavButton.Name = "driverNavButton";
+            driverNavButton.Size = new Size(81, 37);
+            driverNavButton.TabIndex = 14;
+            driverNavButton.Text = "Drivers";
+            driverNavButton.UseVisualStyleBackColor = true;
+            driverNavButton.Click += driverNavButton_Click;
+            // 
+            // forwardButton
+            // 
+            forwardButton.Dock = DockStyle.Right;
+            forwardButton.Location = new Point(886, 0);
+            forwardButton.Name = "forwardButton";
+            forwardButton.Size = new Size(46, 49);
+            forwardButton.TabIndex = 13;
+            forwardButton.Text = "-->";
+            forwardButton.UseVisualStyleBackColor = true;
+            // 
+            // logButton
+            // 
+            logButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            logButton.Location = new Point(540, 9);
+            logButton.Name = "logButton";
+            logButton.Size = new Size(66, 37);
+            logButton.TabIndex = 12;
+            logButton.Text = "Logs";
+            logButton.UseVisualStyleBackColor = true;
+            logButton.Click += logButton_Click;
+            // 
+            // camButton
+            // 
+            camButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            camButton.Location = new Point(453, 9);
+            camButton.Name = "camButton";
+            camButton.Size = new Size(81, 37);
+            camButton.TabIndex = 12;
+            camButton.Text = "Cameras";
+            camButton.UseVisualStyleBackColor = true;
+            camButton.Click += camButton_Click;
+            // 
+            // statusButton
+            // 
+            statusButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            statusButton.Location = new Point(360, 9);
+            statusButton.Name = "statusButton";
+            statusButton.Size = new Size(87, 37);
+            statusButton.TabIndex = 12;
+            statusButton.Text = "Status";
+            statusButton.UseVisualStyleBackColor = true;
+            statusButton.Click += statusButton_Click;
+            // 
+            // accButton
+            // 
+            accButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            accButton.Location = new Point(258, 9);
+            accButton.Name = "accButton";
+            accButton.Size = new Size(96, 37);
+            accButton.TabIndex = 3;
+            accButton.Text = "Accessories";
+            accButton.UseVisualStyleBackColor = true;
+            accButton.Click += accButton_Click;
+            // 
+            // gpsButton
+            // 
+            gpsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            gpsButton.Location = new Point(153, 9);
+            gpsButton.Name = "gpsButton";
+            gpsButton.Size = new Size(99, 37);
+            gpsButton.TabIndex = 2;
+            gpsButton.Text = "GPS";
+            gpsButton.UseVisualStyleBackColor = true;
+            gpsButton.Click += gpsButton_Click;
+            // 
+            // backButton
+            // 
+            backButton.Dock = DockStyle.Left;
+            backButton.Location = new Point(0, 0);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(44, 49);
+            backButton.TabIndex = 1;
+            backButton.Text = "<--";
+            backButton.UseVisualStyleBackColor = true;
+            // 
+            // homeButton
+            // 
+            homeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            homeButton.Location = new Point(53, 9);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(94, 37);
+            homeButton.TabIndex = 0;
+            homeButton.Text = "Home";
+            homeButton.UseVisualStyleBackColor = true;
+            homeButton.Click += homeButton_Click;
+            // 
             // Status
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1067, 692);
+            ClientSize = new Size(932, 553);
+            Controls.Add(NavPanel);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(pictureBox3);
@@ -475,6 +635,7 @@
             tableLayoutPanel2.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            NavPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -512,6 +673,18 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Panel NavPanel;
+        private Button secNavButton;
+        private Button vehNavButton;
+        private Button driverNavButton;
+        private Button forwardButton;
+        private Button logButton;
+        private Button camButton;
+        private Button statusButton;
+        private Button accButton;
+        private Button gpsButton;
+        private Button backButton;
+        private Button homeButton;
     }
 }
 

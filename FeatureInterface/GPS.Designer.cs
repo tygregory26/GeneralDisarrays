@@ -28,242 +28,396 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            button2 = new Button();
+            button1 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            NavPanel = new Panel();
+            secNavButton = new Button();
+            vehNavButton = new Button();
+            driverNavButton = new Button();
+            forwardButton = new Button();
+            logButton = new Button();
+            camButton = new Button();
+            statusButton = new Button();
+            accButton = new Button();
+            gpsButton = new Button();
+            backButton = new Button();
+            homeButton = new Button();
+            NavPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(484, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Owner";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label1.Location = new Point(399, 62);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 31);
+            label1.TabIndex = 1;
+            label1.Text = "Owner";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(67, 118);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Show history";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label2.Location = new Point(67, 148);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(182, 31);
+            label2.TabIndex = 2;
+            label2.Text = "Show history";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(17, 188);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "For";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label3.Location = new Point(17, 235);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(44, 25);
+            label3.TabIndex = 3;
+            label3.Text = "For";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 191);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 22);
-            this.textBox1.TabIndex = 4;
+            textBox1.Location = new Point(73, 239);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(109, 27);
+            textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 191);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(109, 22);
-            this.textBox2.TabIndex = 5;
+            textBox2.Location = new Point(192, 239);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(109, 27);
+            textBox2.TabIndex = 5;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(73, 162);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "From";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label4.Location = new Point(73, 202);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 25);
+            label4.TabIndex = 6;
+            label4.Text = "From";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(187, 162);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 25);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "To";
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label5.Location = new Point(187, 202);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 25);
+            label5.TabIndex = 7;
+            label5.Text = "To";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(779, 98);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(237, 31);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Show geofencing";
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label6.Location = new Point(612, 125);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(237, 31);
+            label6.TabIndex = 13;
+            label6.Text = "Show geofencing";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(812, 137);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 25);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "For";
+            label7.AutoSize = true;
+            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label7.Location = new Point(645, 174);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(44, 25);
+            label7.TabIndex = 14;
+            label7.Text = "For";
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(315, 161);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 34);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Last week";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button2.Location = new Point(315, 201);
+            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Name = "button2";
+            button2.Size = new Size(183, 42);
+            button2.TabIndex = 10;
+            button2.Text = "Last week";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(315, 119);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 34);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Today";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button1.Location = new Point(315, 149);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(183, 42);
+            button1.TabIndex = 11;
+            button1.Text = "Today";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(315, 203);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 34);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Last month";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button3.Location = new Point(315, 254);
+            button3.Margin = new Padding(4, 5, 4, 5);
+            button3.Name = "button3";
+            button3.Size = new Size(183, 42);
+            button3.TabIndex = 12;
+            button3.Text = "Last month";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(868, 133);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 34);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Driver1";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button4.Location = new Point(701, 169);
+            button4.Margin = new Padding(4, 5, 4, 5);
+            button4.Name = "button4";
+            button4.Size = new Size(103, 42);
+            button4.TabIndex = 15;
+            button4.Text = "Driver1";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(868, 175);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 34);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Driver2";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button5.Location = new Point(701, 222);
+            button5.Margin = new Padding(4, 5, 4, 5);
+            button5.Name = "button5";
+            button5.Size = new Size(103, 42);
+            button5.TabIndex = 16;
+            button5.Text = "Driver2";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button6.Location = new System.Drawing.Point(868, 217);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 34);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Driver3";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button6.Location = new Point(701, 274);
+            button6.Margin = new Padding(4, 5, 4, 5);
+            button6.Name = "button6";
+            button6.Size = new Size(103, 42);
+            button6.TabIndex = 17;
+            button6.Text = "Driver3";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button7.Location = new System.Drawing.Point(851, 258);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 60);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "Edit geofencing";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            button7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button7.Location = new Point(684, 325);
+            button7.Margin = new Padding(4, 5, 4, 5);
+            button7.Name = "button7";
+            button7.Size = new Size(144, 75);
+            button7.TabIndex = 19;
+            button7.Text = "Edit geofencing";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(851, 326);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 86);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Update map from cloud";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            button8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            button8.Location = new Point(684, 411);
+            button8.Margin = new Padding(4, 5, 4, 5);
+            button8.Name = "button8";
+            button8.Size = new Size(144, 108);
+            button8.TabIndex = 20;
+            button8.Text = "Update map from cloud";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // NavPanel
+            // 
+            NavPanel.AutoSize = true;
+            NavPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            NavPanel.Controls.Add(secNavButton);
+            NavPanel.Controls.Add(vehNavButton);
+            NavPanel.Controls.Add(driverNavButton);
+            NavPanel.Controls.Add(forwardButton);
+            NavPanel.Controls.Add(logButton);
+            NavPanel.Controls.Add(camButton);
+            NavPanel.Controls.Add(statusButton);
+            NavPanel.Controls.Add(accButton);
+            NavPanel.Controls.Add(gpsButton);
+            NavPanel.Controls.Add(backButton);
+            NavPanel.Controls.Add(homeButton);
+            NavPanel.Dock = DockStyle.Top;
+            NavPanel.Location = new Point(0, 0);
+            NavPanel.Name = "NavPanel";
+            NavPanel.Size = new Size(932, 49);
+            NavPanel.TabIndex = 21;
+            // 
+            // secNavButton
+            // 
+            secNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            secNavButton.Location = new Point(786, 9);
+            secNavButton.Name = "secNavButton";
+            secNavButton.Size = new Size(81, 37);
+            secNavButton.TabIndex = 21;
+            secNavButton.Text = "Security";
+            secNavButton.UseVisualStyleBackColor = true;
+            secNavButton.Click += secNavButton_Click;
+            // 
+            // vehNavButton
+            // 
+            vehNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            vehNavButton.Location = new Point(699, 9);
+            vehNavButton.Name = "vehNavButton";
+            vehNavButton.Size = new Size(81, 37);
+            vehNavButton.TabIndex = 20;
+            vehNavButton.Text = "Vehicles";
+            vehNavButton.UseVisualStyleBackColor = true;
+            vehNavButton.Click += vehNavButton_Click;
+            // 
+            // driverNavButton
+            // 
+            driverNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            driverNavButton.Location = new Point(612, 9);
+            driverNavButton.Name = "driverNavButton";
+            driverNavButton.Size = new Size(81, 37);
+            driverNavButton.TabIndex = 14;
+            driverNavButton.Text = "Drivers";
+            driverNavButton.UseVisualStyleBackColor = true;
+            driverNavButton.Click += driverNavButton_Click;
+            // 
+            // forwardButton
+            // 
+            forwardButton.Dock = DockStyle.Right;
+            forwardButton.Location = new Point(886, 0);
+            forwardButton.Name = "forwardButton";
+            forwardButton.Size = new Size(46, 49);
+            forwardButton.TabIndex = 13;
+            forwardButton.Text = "-->";
+            forwardButton.UseVisualStyleBackColor = true;
+            // 
+            // logButton
+            // 
+            logButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            logButton.Location = new Point(540, 9);
+            logButton.Name = "logButton";
+            logButton.Size = new Size(66, 37);
+            logButton.TabIndex = 12;
+            logButton.Text = "Logs";
+            logButton.UseVisualStyleBackColor = true;
+            logButton.Click += logButton_Click;
+            // 
+            // camButton
+            // 
+            camButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            camButton.Location = new Point(453, 9);
+            camButton.Name = "camButton";
+            camButton.Size = new Size(81, 37);
+            camButton.TabIndex = 12;
+            camButton.Text = "Cameras";
+            camButton.UseVisualStyleBackColor = true;
+            camButton.Click += camButton_Click;
+            // 
+            // statusButton
+            // 
+            statusButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            statusButton.Location = new Point(360, 9);
+            statusButton.Name = "statusButton";
+            statusButton.Size = new Size(87, 37);
+            statusButton.TabIndex = 12;
+            statusButton.Text = "Status";
+            statusButton.UseVisualStyleBackColor = true;
+            statusButton.Click += statusButton_Click;
+            // 
+            // accButton
+            // 
+            accButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            accButton.Location = new Point(258, 9);
+            accButton.Name = "accButton";
+            accButton.Size = new Size(96, 37);
+            accButton.TabIndex = 3;
+            accButton.Text = "Accessories";
+            accButton.UseVisualStyleBackColor = true;
+            accButton.Click += accButton_Click;
+            // 
+            // gpsButton
+            // 
+            gpsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            gpsButton.Location = new Point(153, 9);
+            gpsButton.Name = "gpsButton";
+            gpsButton.Size = new Size(99, 37);
+            gpsButton.TabIndex = 2;
+            gpsButton.Text = "GPS";
+            gpsButton.UseVisualStyleBackColor = true;
+            gpsButton.Click += gpsButton_Click;
+            // 
+            // backButton
+            // 
+            backButton.Dock = DockStyle.Left;
+            backButton.Location = new Point(0, 0);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(44, 49);
+            backButton.TabIndex = 1;
+            backButton.Text = "<--";
+            backButton.UseVisualStyleBackColor = true;
+            // 
+            // homeButton
+            // 
+            homeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            homeButton.Location = new Point(53, 9);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(94, 37);
+            homeButton.TabIndex = 0;
+            homeButton.Text = "Home";
+            homeButton.UseVisualStyleBackColor = true;
+            homeButton.Click += homeButton_Click;
             // 
             // GPS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "GPS";
-            this.Text = "Owner";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(932, 553);
+            Controls.Add(NavPanel);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(button3);
+            Controls.Add(button1);
+            Controls.Add(button2);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "GPS";
+            Text = "Owner";
+            NavPanel.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -285,5 +439,17 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private Panel NavPanel;
+        private Button secNavButton;
+        private Button vehNavButton;
+        private Button driverNavButton;
+        private Button forwardButton;
+        private Button logButton;
+        private Button camButton;
+        private Button statusButton;
+        private Button accButton;
+        private Button gpsButton;
+        private Button backButton;
+        private Button homeButton;
     }
 }

@@ -8,18 +8,24 @@ namespace FeatureInterface
     public partial class GPS : Form
     {
         private Dictionary<string, string> driverPictures = new Dictionary<string, string>();
+        MainWindow mainPage;
 
-        public GPS()
+        public GPS(MainWindow mainPage)
         {
             InitializeComponent();
             InitializeDriverPictures();
+            this.mainPage = mainPage;
         }
+
+        string startupPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        string windowMid = "\\Resources\\Geofencing.jpg";
+        //pictureBoxRearPassenger.Load(startupPath + windowMid);
 
         private void InitializeDriverPictures()
         {
-            driverPictures.Add("Driver1", @"C:\Users\tysou\source\repos\Ty\Geofencing.jpg");
-            driverPictures.Add("Driver2", @"C:\Users\tysou\source\repos\Ty\Geofencing2.jpg");
-            driverPictures.Add("Driver3", @"C:\Users\tysou\source\repos\Ty\Geofencing3.jpg");
+            driverPictures.Add("Driver1", (startupPath + windowMid));
+            //driverPictures.Add("Driver2", @"C:\Users\tysou\source\repos\Ty\Geofencing2.jpg");
+            //driverPictures.Add("Driver3", @"C:\Users\tysou\source\repos\Ty\Geofencing3.jpg");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -29,12 +35,12 @@ namespace FeatureInterface
 
         private void button5_Click(object sender, EventArgs e)
         {
-            ShowGeofenceDialog("Driver2");
+            //ShowGeofenceDialog("Driver2");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            ShowGeofenceDialog("Driver3");
+            //ShowGeofenceDialog("Driver3");
         }
 
         private void ShowGeofenceDialog(string driverId)
@@ -105,6 +111,60 @@ namespace FeatureInterface
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Displaying last month's history...", "History Viewer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void gpsButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage display = MainWindow.ScreenPage.GPS;
+            mainPage.SwitchScreen(display);
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.HOME;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void accButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.ACCESSORY;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void vehNavButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.VEHICLES;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void secNavButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.SECURITY;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void logButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.LOGS;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void statusButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.STATUS;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void camButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.CAMERAS;
+            mainPage.SwitchScreen(displayScreen);
+        }
+
+        private void driverNavButton_Click(object sender, EventArgs e)
+        {
+            MainWindow.ScreenPage displayScreen = MainWindow.ScreenPage.DRIVERS;
+            mainPage.SwitchScreen(displayScreen);
         }
     }
 }

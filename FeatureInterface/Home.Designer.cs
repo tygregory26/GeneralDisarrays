@@ -85,7 +85,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(487, 52);
+            label1.Location = new Point(395, 52);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(90, 31);
@@ -97,7 +97,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(800, 145);
+            label2.Location = new Point(647, 72);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(98, 31);
@@ -108,7 +108,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(724, 188);
+            label3.Location = new Point(571, 115);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(97, 31);
@@ -117,7 +117,7 @@
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(825, 188);
+            progressBar1.Location = new Point(672, 115);
             progressBar1.Margin = new Padding(4, 5, 4, 5);
             progressBar1.Minimum = 20;
             progressBar1.Name = "progressBar1";
@@ -129,7 +129,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(724, 228);
+            label4.Location = new Point(571, 155);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(97, 31);
@@ -138,7 +138,7 @@
             // 
             // progressBar2
             // 
-            progressBar2.Location = new Point(825, 231);
+            progressBar2.Location = new Point(672, 158);
             progressBar2.Margin = new Padding(4, 5, 4, 5);
             progressBar2.Minimum = 60;
             progressBar2.Name = "progressBar2";
@@ -150,7 +150,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(724, 349);
+            label5.Location = new Point(571, 276);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(124, 31);
@@ -161,7 +161,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(724, 311);
+            label6.Location = new Point(571, 238);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(205, 31);
@@ -172,7 +172,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(724, 272);
+            label7.Location = new Point(571, 199);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.RightToLeft = RightToLeft.No;
@@ -183,11 +183,11 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(3, 388);
+            label8.Font = new Font("Microsoft Sans Serif", 16F);
+            label8.Location = new Point(0, 303);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(1005, 36);
+            label8.Size = new Size(905, 31);
             label8.TabIndex = 9;
             label8.Text = "---------------------------------------------------------------------------------------------------";
             // 
@@ -205,7 +205,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(541, 415);
+            label10.Location = new Point(462, 322);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
             label10.Size = new Size(23, 36);
@@ -216,7 +216,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(541, 549);
+            label11.Location = new Point(462, 456);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(23, 36);
@@ -227,7 +227,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(541, 505);
+            label12.Location = new Point(462, 412);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(23, 36);
@@ -238,7 +238,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(541, 460);
+            label13.Location = new Point(462, 367);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(23, 36);
@@ -249,7 +249,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(541, 594);
+            label14.Location = new Point(462, 501);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
             label14.Size = new Size(23, 36);
@@ -260,7 +260,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(541, 638);
+            label15.Location = new Point(462, 545);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.Size = new Size(23, 36);
@@ -271,7 +271,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(153, 432);
+            label16.Location = new Point(102, 276);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
             label16.Size = new Size(241, 42);
@@ -282,7 +282,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(701, 432);
+            label17.Location = new Point(576, 339);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
             label17.Size = new Size(229, 42);
@@ -308,7 +308,7 @@
             label19.BorderStyle = BorderStyle.Fixed3D;
             label19.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label19.ForeColor = Color.Black;
-            label19.Location = new Point(84, 245);
+            label19.Location = new Point(228, 128);
             label19.Margin = new Padding(4, 0, 4, 0);
             label19.Name = "label19";
             label19.Size = new Size(138, 27);
@@ -322,7 +322,7 @@
             label20.BorderStyle = BorderStyle.Fixed3D;
             label20.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.Black;
-            label20.Location = new Point(100, 278);
+            label20.Location = new Point(244, 161);
             label20.Margin = new Padding(4, 0, 4, 0);
             label20.Name = "label20";
             label20.Size = new Size(99, 27);
@@ -336,7 +336,7 @@
             label21.BorderStyle = BorderStyle.Fixed3D;
             label21.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.Black;
-            label21.Location = new Point(75, 317);
+            label21.Location = new Point(219, 200);
             label21.Margin = new Padding(4, 0, 4, 0);
             label21.Name = "label21";
             label21.Size = new Size(160, 27);
@@ -347,7 +347,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.Location = new Point(955, 272);
+            label22.Location = new Point(802, 199);
             label22.Margin = new Padding(4, 0, 4, 0);
             label22.Name = "label22";
             label22.Size = new Size(64, 31);
@@ -358,7 +358,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.Location = new Point(953, 311);
+            label23.Location = new Point(800, 238);
             label23.Margin = new Padding(4, 0, 4, 0);
             label23.Name = "label23";
             label23.Size = new Size(64, 31);
@@ -369,7 +369,7 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.Location = new Point(953, 349);
+            label24.Location = new Point(800, 276);
             label24.Margin = new Padding(4, 0, 4, 0);
             label24.Name = "label24";
             label24.Size = new Size(94, 31);
@@ -380,7 +380,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label25.Location = new Point(587, 491);
+            label25.Location = new Point(482, 398);
             label25.Margin = new Padding(4, 0, 4, 0);
             label25.Name = "label25";
             label25.Size = new Size(174, 31);
@@ -391,7 +391,7 @@
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label26.Location = new Point(892, 491);
+            label26.Location = new Point(775, 398);
             label26.Margin = new Padding(4, 0, 4, 0);
             label26.Name = "label26";
             label26.Size = new Size(92, 31);
@@ -402,7 +402,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label27.Location = new Point(820, 529);
+            label27.Location = new Point(703, 436);
             label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
             label27.Size = new Size(218, 29);
@@ -412,11 +412,11 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.Location = new Point(555, 529);
+            label28.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Bold);
+            label28.Location = new Point(476, 436);
             label28.Margin = new Padding(4, 0, 4, 0);
             label28.Name = "label28";
-            label28.Size = new Size(219, 31);
+            label28.Size = new Size(179, 26);
             label28.TabIndex = 31;
             label28.Text = "10/20, 10:01AM";
             // 
@@ -424,7 +424,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label29.Location = new Point(835, 568);
+            label29.Location = new Point(718, 475);
             label29.Margin = new Padding(4, 0, 4, 0);
             label29.Name = "label29";
             label29.Size = new Size(192, 29);
@@ -434,11 +434,11 @@
             // label31
             // 
             label31.AutoSize = true;
-            label31.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label31.Location = new Point(556, 568);
+            label31.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Bold);
+            label31.Location = new Point(477, 475);
             label31.Margin = new Padding(4, 0, 4, 0);
             label31.Name = "label31";
-            label31.Size = new Size(219, 31);
+            label31.Size = new Size(179, 26);
             label31.TabIndex = 34;
             label31.Text = "10/20, 10:25AM";
             // 
@@ -446,7 +446,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label30.Location = new Point(801, 606);
+            label30.Location = new Point(684, 513);
             label30.Margin = new Padding(4, 0, 4, 0);
             label30.Name = "label30";
             label30.Size = new Size(240, 29);
@@ -456,17 +456,18 @@
             // label32
             // 
             label32.AutoSize = true;
-            label32.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label32.Location = new Point(555, 606);
+            label32.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Bold);
+            label32.Location = new Point(476, 513);
             label32.Margin = new Padding(4, 0, 4, 0);
             label32.Name = "label32";
-            label32.Size = new Size(219, 31);
+            label32.Size = new Size(179, 26);
             label32.TabIndex = 36;
             label32.Text = "10/20, 10:25AM";
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(84, 491);
+            pictureBox2.Image = Properties.Resources.Geofencing;
+            pictureBox2.Location = new Point(16, 345);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(412, 192);
@@ -476,6 +477,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.startButton;
             pictureBox1.Location = new Point(84, 117);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
@@ -502,7 +504,7 @@
             NavPanel.Dock = DockStyle.Top;
             NavPanel.Location = new Point(0, 0);
             NavPanel.Name = "NavPanel";
-            NavPanel.Size = new Size(1067, 49);
+            NavPanel.Size = new Size(932, 49);
             NavPanel.TabIndex = 37;
             // 
             // secNavButton
@@ -541,7 +543,7 @@
             // forwardButton
             // 
             forwardButton.Dock = DockStyle.Right;
-            forwardButton.Location = new Point(1021, 0);
+            forwardButton.Location = new Point(886, 0);
             forwardButton.Name = "forwardButton";
             forwardButton.Size = new Size(46, 49);
             forwardButton.TabIndex = 13;
@@ -628,7 +630,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1067, 692);
+            ClientSize = new Size(932, 553);
             Controls.Add(label32);
             Controls.Add(label30);
             Controls.Add(label31);
