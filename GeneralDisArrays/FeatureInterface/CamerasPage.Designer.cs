@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            textBox1 = new TextBox();
-            openFileDialog1 = new OpenFileDialog();
             NavPanel = new Panel();
             secNavButton = new Button();
             vehNavButton = new Button();
@@ -50,7 +41,17 @@
             gpsButton = new Button();
             backButton = new Button();
             homeButton = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            textBox1 = new TextBox();
+            openFileDialog1 = new OpenFileDialog();
             tableLayoutPanel1.SuspendLayout();
+            NavPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -58,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            NavPanel.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -78,130 +78,16 @@
             tableLayoutPanel1.Controls.Add(textBox1, 1, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 6;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 52F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3344421F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3344421F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3311119F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
-            tableLayoutPanel1.Size = new Size(932, 553);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            tableLayoutPanel1.Size = new Size(816, 415);
             tableLayoutPanel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = FeatureInterface.Properties.Resources.IMG_20170726_094506_12;
-            pictureBox1.Location = new Point(227, 141);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            tableLayoutPanel1.SetRowSpan(pictureBox1, 3);
-            pictureBox1.Size = new Size(477, 340);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Image = FeatureInterface.Properties.Resources.IMG_20170727_094956_12;
-            pictureBox2.Location = new Point(3, 141);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(218, 108);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Dock = DockStyle.Fill;
-            pictureBox3.Image = FeatureInterface.Properties.Resources.IMG_20170727_094956_12;
-            pictureBox3.Location = new Point(3, 257);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(218, 108);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox4.Dock = DockStyle.Fill;
-            pictureBox4.Image = FeatureInterface.Properties.Resources.IMG_20170727_094956_12;
-            pictureBox4.Location = new Point(3, 373);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(218, 108);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 4;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox5.Dock = DockStyle.Fill;
-            pictureBox5.Image = FeatureInterface.Properties.Resources.IMG_20170811_094114_2;
-            pictureBox5.Location = new Point(710, 373);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(219, 108);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Image = FeatureInterface.Properties.Resources.IMG_20170811_094114_2;
-            pictureBox6.Location = new Point(710, 257);
-            pictureBox6.Margin = new Padding(3, 4, 3, 4);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(219, 108);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 6;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox7.Dock = DockStyle.Fill;
-            pictureBox7.Image = FeatureInterface.Properties.Resources.IMG_20170811_094114_2;
-            pictureBox7.Location = new Point(710, 141);
-            pictureBox7.Margin = new Padding(3, 4, 3, 4);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(219, 108);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(227, 74);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(477, 52);
-            textBox1.TabIndex = 8;
-            textBox1.TabStop = false;
-            textBox1.Text = "Video Feeds";
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // openFileDialog1
-            // 
-            //openFileDialog1.FileName = "openFileDialog1";
-            //openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*";
-            //openFileDialog1.Title = "Select a picture file.";
-            //openFileDialog1.FileOk += openFileDialog1_FileOk;
             // 
             // NavPanel
             // 
@@ -220,17 +106,19 @@
             NavPanel.Controls.Add(backButton);
             NavPanel.Controls.Add(homeButton);
             NavPanel.Dock = DockStyle.Top;
-            NavPanel.Location = new Point(3, 3);
+            NavPanel.Location = new Point(3, 2);
+            NavPanel.Margin = new Padding(3, 2, 3, 2);
             NavPanel.Name = "NavPanel";
-            NavPanel.Size = new Size(926, 49);
+            NavPanel.Size = new Size(810, 37);
             NavPanel.TabIndex = 14;
             // 
             // secNavButton
             // 
             secNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            secNavButton.Location = new Point(786, 9);
+            secNavButton.Location = new Point(688, 7);
+            secNavButton.Margin = new Padding(3, 2, 3, 2);
             secNavButton.Name = "secNavButton";
-            secNavButton.Size = new Size(81, 37);
+            secNavButton.Size = new Size(71, 28);
             secNavButton.TabIndex = 21;
             secNavButton.Text = "Security";
             secNavButton.UseVisualStyleBackColor = true;
@@ -239,9 +127,10 @@
             // vehNavButton
             // 
             vehNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            vehNavButton.Location = new Point(699, 9);
+            vehNavButton.Location = new Point(612, 7);
+            vehNavButton.Margin = new Padding(3, 2, 3, 2);
             vehNavButton.Name = "vehNavButton";
-            vehNavButton.Size = new Size(81, 37);
+            vehNavButton.Size = new Size(71, 28);
             vehNavButton.TabIndex = 20;
             vehNavButton.Text = "Vehicles";
             vehNavButton.UseVisualStyleBackColor = true;
@@ -250,9 +139,10 @@
             // driverNavButton
             // 
             driverNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            driverNavButton.Location = new Point(612, 9);
+            driverNavButton.Location = new Point(536, 7);
+            driverNavButton.Margin = new Padding(3, 2, 3, 2);
             driverNavButton.Name = "driverNavButton";
-            driverNavButton.Size = new Size(81, 37);
+            driverNavButton.Size = new Size(71, 28);
             driverNavButton.TabIndex = 14;
             driverNavButton.Text = "Drivers";
             driverNavButton.UseVisualStyleBackColor = true;
@@ -261,9 +151,10 @@
             // forwardButton
             // 
             forwardButton.Dock = DockStyle.Right;
-            forwardButton.Location = new Point(880, 0);
+            forwardButton.Location = new Point(770, 0);
+            forwardButton.Margin = new Padding(3, 2, 3, 2);
             forwardButton.Name = "forwardButton";
-            forwardButton.Size = new Size(46, 49);
+            forwardButton.Size = new Size(40, 37);
             forwardButton.TabIndex = 13;
             forwardButton.Text = "-->";
             forwardButton.UseVisualStyleBackColor = true;
@@ -271,9 +162,10 @@
             // logButton
             // 
             logButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            logButton.Location = new Point(540, 9);
+            logButton.Location = new Point(472, 7);
+            logButton.Margin = new Padding(3, 2, 3, 2);
             logButton.Name = "logButton";
-            logButton.Size = new Size(66, 37);
+            logButton.Size = new Size(58, 28);
             logButton.TabIndex = 12;
             logButton.Text = "Logs";
             logButton.UseVisualStyleBackColor = true;
@@ -282,9 +174,10 @@
             // camButton
             // 
             camButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            camButton.Location = new Point(453, 9);
+            camButton.Location = new Point(396, 7);
+            camButton.Margin = new Padding(3, 2, 3, 2);
             camButton.Name = "camButton";
-            camButton.Size = new Size(81, 37);
+            camButton.Size = new Size(71, 28);
             camButton.TabIndex = 12;
             camButton.Text = "Cameras";
             camButton.UseVisualStyleBackColor = true;
@@ -293,9 +186,10 @@
             // statusButton
             // 
             statusButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            statusButton.Location = new Point(360, 9);
+            statusButton.Location = new Point(315, 7);
+            statusButton.Margin = new Padding(3, 2, 3, 2);
             statusButton.Name = "statusButton";
-            statusButton.Size = new Size(87, 37);
+            statusButton.Size = new Size(76, 28);
             statusButton.TabIndex = 12;
             statusButton.Text = "Status";
             statusButton.UseVisualStyleBackColor = true;
@@ -304,9 +198,10 @@
             // accButton
             // 
             accButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            accButton.Location = new Point(258, 9);
+            accButton.Location = new Point(226, 7);
+            accButton.Margin = new Padding(3, 2, 3, 2);
             accButton.Name = "accButton";
-            accButton.Size = new Size(96, 37);
+            accButton.Size = new Size(84, 28);
             accButton.TabIndex = 3;
             accButton.Text = "Accessories";
             accButton.UseVisualStyleBackColor = true;
@@ -315,9 +210,10 @@
             // gpsButton
             // 
             gpsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            gpsButton.Location = new Point(153, 9);
+            gpsButton.Location = new Point(134, 7);
+            gpsButton.Margin = new Padding(3, 2, 3, 2);
             gpsButton.Name = "gpsButton";
-            gpsButton.Size = new Size(99, 37);
+            gpsButton.Size = new Size(87, 28);
             gpsButton.TabIndex = 2;
             gpsButton.Text = "GPS";
             gpsButton.UseVisualStyleBackColor = true;
@@ -327,8 +223,9 @@
             // 
             backButton.Dock = DockStyle.Left;
             backButton.Location = new Point(0, 0);
+            backButton.Margin = new Padding(3, 2, 3, 2);
             backButton.Name = "backButton";
-            backButton.Size = new Size(44, 49);
+            backButton.Size = new Size(38, 37);
             backButton.TabIndex = 1;
             backButton.Text = "<--";
             backButton.UseVisualStyleBackColor = true;
@@ -336,25 +233,124 @@
             // homeButton
             // 
             homeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            homeButton.Location = new Point(53, 9);
+            homeButton.Location = new Point(46, 7);
+            homeButton.Margin = new Padding(3, 2, 3, 2);
             homeButton.Name = "homeButton";
-            homeButton.Size = new Size(94, 37);
+            homeButton.Size = new Size(82, 28);
             homeButton.TabIndex = 0;
             homeButton.Text = "Home";
             homeButton.UseVisualStyleBackColor = true;
             homeButton.Click += homeButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.IMG_20170726_094506_12;
+            pictureBox1.Location = new Point(199, 105);
+            pictureBox1.Name = "pictureBox1";
+            tableLayoutPanel1.SetRowSpan(pictureBox1, 3);
+            pictureBox1.Size = new Size(417, 255);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox2.Dock = DockStyle.Fill;
+            pictureBox2.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox2.Location = new Point(3, 105);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(190, 81);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Dock = DockStyle.Fill;
+            pictureBox3.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox3.Location = new Point(3, 192);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(190, 81);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox4.Dock = DockStyle.Fill;
+            pictureBox4.Image = Properties.Resources.IMG_20170727_094956_12;
+            pictureBox4.Location = new Point(3, 279);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(190, 81);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 4;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox5.Dock = DockStyle.Fill;
+            pictureBox5.Image = Properties.Resources.IMG_20170811_094114_2;
+            pictureBox5.Location = new Point(622, 279);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(191, 81);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 5;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = Properties.Resources.IMG_20170811_094114_2;
+            pictureBox6.Location = new Point(622, 192);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(191, 81);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 6;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox7.Dock = DockStyle.Fill;
+            pictureBox7.Image = Properties.Resources.IMG_20170811_094114_2;
+            pictureBox7.Location = new Point(622, 105);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(191, 81);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(199, 55);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(417, 43);
+            textBox1.TabIndex = 8;
+            textBox1.TabStop = false;
+            textBox1.Text = "Video Feeds";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
             // CamerasPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 553);
+            ClientSize = new Size(816, 415);
             Controls.Add(tableLayoutPanel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "CamerasPage";
             Text = "Video Feeds";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            NavPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -362,7 +358,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            NavPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
