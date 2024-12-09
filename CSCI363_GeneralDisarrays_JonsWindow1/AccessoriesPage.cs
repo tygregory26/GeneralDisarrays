@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSCI363_GeneralDisarrays_JonsWindow1.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,18 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
         bool remoteStartEnabled = true;
         bool rearDriverUp = false, rearDriverDown = false, rearPassengerUp = false, rearPassengerDown = false;
         bool frontDriverUp = false, frontDriverDown = false, frontPassengerUp = false, frontPassengerDown = false;
-        String windowMid = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPane.png";
-        String windowClosed = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneClosed.png";
-        String windowOpen = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneOpen.png";
+        
+        string startupPath = (Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName);
+        string windowMid = "\\WIndowForSecurityPane.png";
+        string windowClosed = "\\WIndowForSecurityPaneClosed.png";
+        string windowOpen = "\\WIndowForSecurityPaneOpen.png";
+
+        //string windowMid = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPane.png";
+        //string windowClosed = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneClosed.png";
+        //string windowOpen = @"C:\Users\Razor\source\repos\GeneralDisarrays\CSCI363_GeneralDisarrays_JonsWindow1\WIndowForSecurityPaneOpen.png";
+
+        //string fullPathWindowMid = (startupPath + windowMid);
+
         public AccessoriesPage()
         {
             InitializeComponent();
@@ -35,12 +45,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (rearDriverDown)
             {
                 rearDriverDown = false;
-                pictureBoxRearDriver.Load(windowMid);
+                pictureBoxRearDriver.Load(startupPath + windowMid);
             }
             else
             {
                 rearDriverUp = true;
-                pictureBoxRearDriver.Load(windowClosed);
+                pictureBoxRearDriver.Load(startupPath + windowClosed);
             }
         }
 
@@ -54,12 +64,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (rearPassengerDown)
             {
                 rearPassengerDown = false;
-                pictureBoxRearPassenger.Load(windowMid);
+                pictureBoxRearPassenger.Load(startupPath + windowMid);
             }
             else
             {
                 rearPassengerUp = true;
-                pictureBoxRearPassenger.Load(windowClosed);
+                pictureBoxRearPassenger.Load(startupPath + windowClosed);
             }
         }
 
@@ -73,12 +83,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (frontDriverDown)
             {
                 frontDriverDown = false;
-                pictureBoxFrontDriver.Load(windowMid);
+                pictureBoxFrontDriver.Load(startupPath + windowMid);
             }
             else
             {
                 frontDriverUp = true;
-                pictureBoxFrontDriver.Load(windowClosed);
+                pictureBoxFrontDriver.Load(startupPath + windowClosed);
             }
         }
 
@@ -92,12 +102,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (frontPassengerDown)
             {
                 frontPassengerDown = false;
-                pictureBoxFrontPassenger.Load(windowMid);
+                pictureBoxFrontPassenger.Load(startupPath + windowMid);
             }
             else
             {
                 frontPassengerUp = true;
-                pictureBoxFrontPassenger.Load(windowClosed);
+                pictureBoxFrontPassenger.Load(startupPath + windowClosed);
             }
         }
 
@@ -111,12 +121,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (rearDriverUp)
             {
                 rearDriverUp = false;
-                pictureBoxRearDriver.Load(windowMid);
+                pictureBoxRearDriver.Load(startupPath + windowMid);
             }
             else
             {
                 rearDriverDown = true;
-                pictureBoxRearDriver.Load(windowOpen);
+                pictureBoxRearDriver.Load(startupPath + windowOpen);
             }
         }
 
@@ -130,12 +140,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (rearPassengerUp)
             {
                 rearPassengerUp = false;
-                pictureBoxRearPassenger.Load(windowMid);
+                pictureBoxRearPassenger.Load(startupPath + windowMid);
             }
             else
             {
                 rearPassengerDown = true;
-                pictureBoxRearPassenger.Load(windowOpen);
+                pictureBoxRearPassenger.Load(startupPath + windowOpen);
             }
         }
 
@@ -149,12 +159,12 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (frontDriverUp)
             {
                 frontDriverUp = false;
-                pictureBoxFrontDriver.Load(windowMid);
+                pictureBoxFrontDriver.Load(startupPath + windowMid);
             }
             else
             {
                 frontDriverDown = true;
-                pictureBoxFrontDriver.Load(windowOpen);
+                pictureBoxFrontDriver.Load(startupPath + windowOpen);
             }
         }
 
@@ -168,22 +178,22 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
             else if (frontPassengerUp)
             {
                 frontPassengerUp = false;
-                pictureBoxFrontPassenger.Load(windowMid);
+                pictureBoxFrontPassenger.Load(startupPath + windowMid);
             }
             else
             {
                 frontPassengerDown = true;
-                pictureBoxFrontPassenger.Load(windowOpen);
+                pictureBoxFrontPassenger.Load(startupPath + windowOpen);
             }
         }
 
         private void allUpButton_Click(object sender, EventArgs e)
         {
             //Change all windows to fully closed
-            pictureBoxFrontPassenger.Load(windowClosed);
-            pictureBoxFrontDriver.Load(windowClosed);
-            pictureBoxRearPassenger.Load(windowClosed);
-            pictureBoxRearDriver.Load(windowClosed);
+            pictureBoxFrontPassenger.Load(startupPath + windowClosed);
+            pictureBoxFrontDriver.Load(startupPath + windowClosed);
+            pictureBoxRearPassenger.Load(startupPath + windowClosed);
+            pictureBoxRearDriver.Load(startupPath + windowClosed);
             rearDriverDown = false;
             rearDriverUp = true;
             frontDriverDown = false;
@@ -197,10 +207,10 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
         private void allDownButton_Click(object sender, EventArgs e)
         {
             //Change all windows to fully open
-            pictureBoxFrontPassenger.Load(windowOpen);
-            pictureBoxFrontDriver.Load(windowOpen);
-            pictureBoxRearPassenger.Load(windowOpen);
-            pictureBoxRearDriver.Load(windowOpen);
+            pictureBoxFrontPassenger.Load(startupPath + windowOpen);
+            pictureBoxFrontDriver.Load(startupPath + windowOpen);
+            pictureBoxRearPassenger.Load(startupPath + windowOpen);
+            pictureBoxRearDriver.Load(startupPath + windowOpen);
             rearDriverDown = true;
             rearDriverUp = false;
             frontDriverDown = true;
@@ -232,6 +242,8 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
         {
             //Change font to bold to show selected choice, unbold the other
             doorsLocked = true;
+            lockDoorsButton.Text = ("Locked");
+            unlockDoorsButton.Text = ("Unlock");
             lockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             unlockDoorsButton.Font = new Font("Segoe UI", 20.25F);
         }
@@ -240,12 +252,15 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
         {
             //Change font to bold to show selected choice, unbold the other
             doorsLocked = false;
+            lockDoorsButton.Text = ("Lock");
+            unlockDoorsButton.Text = ("Unlocked");
             unlockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lockDoorsButton.Font = new Font("Segoe UI", 20.25F);
         }
 
         private void startRemoteStartButton_Click(object sender, EventArgs e)
         {
+            //remoteStartOutputListBox.Items.Add(startupPath + windowMid); //TEST CODE
             if (remoteStartEnabled)
             {
                 if (vehicleRunning)
@@ -268,6 +283,7 @@ namespace CSCI363_GeneralDisarrays_JonsWindow1
 
         private void stopRemoteStartButton_Click(object sender, EventArgs e)
         {
+            //remoteStartOutputListBox.Items.Add(startupPath + windowMid); //TEST CODE
             if (remoteStartEnabled)
             {
                 if (vehicleRunning)

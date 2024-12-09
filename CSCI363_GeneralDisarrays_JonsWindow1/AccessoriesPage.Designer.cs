@@ -426,6 +426,7 @@
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel3.Size = new Size(352, 313);
             tableLayoutPanel3.TabIndex = 1;
             // 
@@ -479,7 +480,7 @@
             lockDoorsButton.Name = "lockDoorsButton";
             lockDoorsButton.Size = new Size(164, 69);
             lockDoorsButton.TabIndex = 0;
-            lockDoorsButton.Text = "Lock";
+            lockDoorsButton.Text = "Locked";
             lockDoorsButton.UseVisualStyleBackColor = true;
             lockDoorsButton.Click += lockDoorsButton_Click;
             // 
