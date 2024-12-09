@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Owner.cs">
+    <Compile Include="GPS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Owner.Designer.cs">
-      <DependentUpon>Owner.cs</DependentUpon>
+    <Compile Include="GPS.Designer.cs">
+      <DependentUpon>GPS.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -70,8 +70,8 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Owner.resx">
-      <DependentUpon>Owner.cs</DependentUpon>
+    <EmbeddedResource Include="GPS.resx">
+      <DependentUpon>GPS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="statusOfVehicle.resx">
       <DependentUpon>statusOfVehicle.cs</DependentUpon>

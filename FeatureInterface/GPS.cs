@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Ty
+namespace FeatureInterface
 {
-    public partial class Owner : Form
+    public partial class GPS : Form
     {
         private Dictionary<string, string> driverPictures = new Dictionary<string, string>();
 
-        public Owner()
+        public GPS()
         {
             InitializeComponent();
             InitializeDriverPictures();

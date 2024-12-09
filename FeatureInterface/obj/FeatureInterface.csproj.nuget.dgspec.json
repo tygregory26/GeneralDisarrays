@@ -31,11 +31,7 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj": {
-                "projectPath": "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -74,22 +70,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj",
-        "projectName": "Ty",
-        "projectPath": "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

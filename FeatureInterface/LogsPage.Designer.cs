@@ -39,9 +39,11 @@
             button3 = new Button();
             button4 = new Button();
             textBox3 = new TextBox();
+            helpProvider1 = new HelpProvider();
             NavPanel = new Panel();
-            button5 = new Button();
-            button6 = new Button();
+            secNavButton = new Button();
+            vehNavButton = new Button();
+            driverNavButton = new Button();
             forwardButton = new Button();
             logButton = new Button();
             camButton = new Button();
@@ -50,7 +52,6 @@
             gpsButton = new Button();
             backButton = new Button();
             homeButton = new Button();
-            helpProvider1 = new HelpProvider();
             NavPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -154,8 +155,9 @@
             // 
             NavPanel.AutoSize = true;
             NavPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            NavPanel.Controls.Add(button5);
-            NavPanel.Controls.Add(button6);
+            NavPanel.Controls.Add(secNavButton);
+            NavPanel.Controls.Add(vehNavButton);
+            NavPanel.Controls.Add(driverNavButton);
             NavPanel.Controls.Add(forwardButton);
             NavPanel.Controls.Add(logButton);
             NavPanel.Controls.Add(camButton);
@@ -168,27 +170,40 @@
             NavPanel.Location = new Point(0, 0);
             NavPanel.Name = "NavPanel";
             NavPanel.Size = new Size(954, 49);
-            NavPanel.TabIndex = 15;
+            NavPanel.TabIndex = 14;
             // 
-            // button5
+            // secNavButton
             // 
-            button5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button5.Location = new Point(699, 9);
-            button5.Name = "button5";
-            button5.Size = new Size(81, 37);
-            button5.TabIndex = 20;
-            button5.Text = "Vehicles";
-            button5.UseVisualStyleBackColor = true;
+            secNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            secNavButton.Location = new Point(786, 9);
+            secNavButton.Name = "secNavButton";
+            secNavButton.Size = new Size(81, 37);
+            secNavButton.TabIndex = 21;
+            secNavButton.Text = "Security";
+            secNavButton.UseVisualStyleBackColor = true;
+            secNavButton.Click += secNavButton_Click;
             // 
-            // button6
+            // vehNavButton
             // 
-            button6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button6.Location = new Point(612, 9);
-            button6.Name = "button6";
-            button6.Size = new Size(81, 37);
-            button6.TabIndex = 14;
-            button6.Text = "Drivers";
-            button6.UseVisualStyleBackColor = true;
+            vehNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            vehNavButton.Location = new Point(699, 9);
+            vehNavButton.Name = "vehNavButton";
+            vehNavButton.Size = new Size(81, 37);
+            vehNavButton.TabIndex = 20;
+            vehNavButton.Text = "Vehicles";
+            vehNavButton.UseVisualStyleBackColor = true;
+            vehNavButton.Click += vehNavButton_Click;
+            // 
+            // driverNavButton
+            // 
+            driverNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            driverNavButton.Location = new Point(612, 9);
+            driverNavButton.Name = "driverNavButton";
+            driverNavButton.Size = new Size(81, 37);
+            driverNavButton.TabIndex = 14;
+            driverNavButton.Text = "Drivers";
+            driverNavButton.UseVisualStyleBackColor = true;
+            driverNavButton.Click += driverNavButton_Click;
             // 
             // forwardButton
             // 
@@ -209,6 +224,7 @@
             logButton.TabIndex = 12;
             logButton.Text = "Logs";
             logButton.UseVisualStyleBackColor = true;
+            logButton.Click += logButton_Click;
             // 
             // camButton
             // 
@@ -219,6 +235,7 @@
             camButton.TabIndex = 12;
             camButton.Text = "Cameras";
             camButton.UseVisualStyleBackColor = true;
+            camButton.Click += camButton_Click;
             // 
             // statusButton
             // 
@@ -229,6 +246,7 @@
             statusButton.TabIndex = 12;
             statusButton.Text = "Status";
             statusButton.UseVisualStyleBackColor = true;
+            statusButton.Click += statusButton_Click;
             // 
             // accButton
             // 
@@ -239,6 +257,7 @@
             accButton.TabIndex = 3;
             accButton.Text = "Accessories";
             accButton.UseVisualStyleBackColor = true;
+            accButton.Click += accButton_Click;
             // 
             // gpsButton
             // 
@@ -249,6 +268,7 @@
             gpsButton.TabIndex = 2;
             gpsButton.Text = "GPS";
             gpsButton.UseVisualStyleBackColor = true;
+            gpsButton.Click += gpsButton_Click;
             // 
             // backButton
             // 
@@ -269,6 +289,7 @@
             homeButton.TabIndex = 0;
             homeButton.Text = "Home";
             homeButton.UseVisualStyleBackColor = true;
+            homeButton.Click += homeButton_Click;
             // 
             // LogsPage
             // 
@@ -307,9 +328,11 @@
         private Button button3;
         private Button button4;
         private TextBox textBox3;
+        private HelpProvider helpProvider1;
         private Panel NavPanel;
-        private Button button5;
-        private Button button6;
+        private Button secNavButton;
+        private Button vehNavButton;
+        private Button driverNavButton;
         private Button forwardButton;
         private Button logButton;
         private Button camButton;
@@ -318,6 +341,5 @@
         private Button gpsButton;
         private Button backButton;
         private Button homeButton;
-        private HelpProvider helpProvider1;
     }
 }

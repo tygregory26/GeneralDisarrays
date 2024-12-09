@@ -1,8 +1,8 @@
-using Ty;
+
 
 namespace FeatureInterface
 {
-    public class Program : Form
+    internal static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -17,54 +17,58 @@ namespace FeatureInterface
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-
-            //form1.Show();
-            //ownerForm.Show();
-            Application.Run(new Program());
+            MainWindow mainPage = new MainWindow();
+       
+            Application.Run(mainPage.driversForm);
         }
+    }
 
-        static Status statusForm;
-        static Home homeForm;
-        static Owner ownerForm;
-        static Drivers driverForm;
-        static ManageVehicles manageVehiclesForm;
-        static LogsPage logsForm;
+    public class MainWindow
+    {
+        public Status statusForm;
+        public Home homeForm;
+        public GPS gpsForm;
+        public Drivers driversForm;
+        public ManageVehicles manageVehiclesForm;
+        public LogsPage logsForm;
         //AccessoryPage accForm;
         //SecurityPage securityForm;
         //CamerasPage camerasForm;
-        public Program()
+
+        public MainWindow()
         {
-            statusForm = new Status();
-            homeForm = new Home();
-            driverForm = new Drivers();
-            ownerForm = new Owner();
-            manageVehiclesForm = new ManageVehicles();
-            logsForm = new LogsPage();
+            statusForm = new Status(this);
+            homeForm = new Home(this);
+            gpsForm = new GPS();
+            driversForm = new Drivers(this);
+            driversForm.Show();
+            manageVehiclesForm = new ManageVehicles(this);
+            logsForm = new LogsPage(this);
             //accForm = new AccessoryPage();
             //securityForm = new SecurityPage();
             //camerasForm = new CamerasPage();
         }
 
-        public static void SwitchScreen(Enum newScreen)
+        public void SwitchScreen(Enum newScreen)
         {
             switch (newScreen)
             {
                 case ScreenPage.HOME:
                     homeForm.Show();
                     statusForm.Hide();
-                    driverForm.Hide();
-                    ownerForm.Hide();
+                    driversForm.Hide();
+                    gpsForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
                     //securityForm.Hide();
                     //camerasForm.Hide();
                     break;
-                case ScreenPage.OWNER:
-                    ownerForm.Show();
+                case ScreenPage.GPS:
+                    gpsForm.Show();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
@@ -73,9 +77,9 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.STATUS:
                     statusForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
@@ -83,8 +87,8 @@ namespace FeatureInterface
                     //camerasForm.Hide();
                     break;
                 case ScreenPage.DRIVERS:
-                    driverForm.Show();
-                    ownerForm.Hide();
+                    driversForm.Show();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
                     manageVehiclesForm.Hide();
@@ -95,10 +99,10 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.VEHICLES:
                     manageVehiclesForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
                     //securityForm.Hide();
@@ -106,10 +110,10 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.LOGS:
                     logsForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     //accForm.Hide();
                     //securityForm.Hide();
@@ -117,10 +121,10 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.CAMERAS:
                     //camerasForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
@@ -128,10 +132,10 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.ACCESSORY:
                     //accForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //securityForm.Hide();
@@ -139,10 +143,10 @@ namespace FeatureInterface
                     break;
                 case ScreenPage.SECURITY:
                     //securityForm.Show();
-                    ownerForm.Hide();
+                    gpsForm.Hide();
                     homeForm.Hide();
                     statusForm.Hide();
-                    driverForm.Hide();
+                    driversForm.Hide();
                     manageVehiclesForm.Hide();
                     logsForm.Hide();
                     //accForm.Hide();
@@ -151,11 +155,10 @@ namespace FeatureInterface
             }
         }
 
-
         public enum ScreenPage
         {
             HOME,
-            OWNER,
+            GPS,
             STATUS,
             DRIVERS,
             VEHICLES,

@@ -13,7 +13,7 @@ namespace Ty
 
             Status form1 = new Status();
             Home homeForm = new Home();
-            Owner ownerForm = new Owner();
+            GPS ownerForm = new GPS();
 
             form1.Show();
             ownerForm.Show();

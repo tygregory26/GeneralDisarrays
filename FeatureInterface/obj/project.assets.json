@@ -1,29 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
-      "Ty/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Ty.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Ty.dll": {}
-        }
-      }
-    }
+    "net8.0-windows7.0": {}
   },
-  "libraries": {
-    "Ty/1.0.0": {
-      "type": "project",
-      "path": "../Ty.csproj",
-      "msbuildProject": "../Ty.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "Ty >= 1.0.0"
-    ]
+    "net8.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Nivloc\\.nuget\\packages\\": {},
@@ -56,11 +38,7 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj": {
-              "projectPath": "C:\\Users\\Nivloc\\Box\\UND1473869\\CSCI\\363\\GeneralDisarrays\\Ty.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

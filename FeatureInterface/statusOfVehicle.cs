@@ -1,17 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace FeatureInterface
 {
-    public partial class LogsPage : Form
+    public partial class Status : Form
     {
         MainWindow mainPage;
-        public LogsPage(MainWindow mainPage)
+        public Status(MainWindow mainPage)
         {
             InitializeComponent();
             this.mainPage = mainPage;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void gpsButton_Click(object sender, EventArgs e)
