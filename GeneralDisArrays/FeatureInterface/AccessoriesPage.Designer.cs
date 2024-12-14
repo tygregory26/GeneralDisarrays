@@ -110,15 +110,13 @@
             tableLayoutPanel1.Controls.Add(textBox1, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 53F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 44.4444427F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 55.5555573F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(932, 553);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 51.9230766F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 48.0769234F));
+            tableLayoutPanel1.Size = new Size(812, 635);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // NavPanel
@@ -138,17 +136,19 @@
             NavPanel.Controls.Add(backButton);
             NavPanel.Controls.Add(homeButton);
             NavPanel.Dock = DockStyle.Top;
-            NavPanel.Location = new Point(3, 3);
+            NavPanel.Location = new Point(3, 2);
+            NavPanel.Margin = new Padding(3, 2, 3, 2);
             NavPanel.Name = "NavPanel";
-            NavPanel.Size = new Size(926, 49);
+            NavPanel.Size = new Size(806, 36);
             NavPanel.TabIndex = 14;
             // 
             // secNavButton
             // 
             secNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            secNavButton.Location = new Point(786, 9);
+            secNavButton.Location = new Point(688, 7);
+            secNavButton.Margin = new Padding(3, 2, 3, 2);
             secNavButton.Name = "secNavButton";
-            secNavButton.Size = new Size(81, 37);
+            secNavButton.Size = new Size(71, 28);
             secNavButton.TabIndex = 21;
             secNavButton.Text = "Security";
             secNavButton.UseVisualStyleBackColor = true;
@@ -157,9 +157,10 @@
             // vehNavButton
             // 
             vehNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            vehNavButton.Location = new Point(699, 9);
+            vehNavButton.Location = new Point(612, 7);
+            vehNavButton.Margin = new Padding(3, 2, 3, 2);
             vehNavButton.Name = "vehNavButton";
-            vehNavButton.Size = new Size(81, 37);
+            vehNavButton.Size = new Size(71, 28);
             vehNavButton.TabIndex = 20;
             vehNavButton.Text = "Vehicles";
             vehNavButton.UseVisualStyleBackColor = true;
@@ -168,9 +169,10 @@
             // driverNavButton
             // 
             driverNavButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            driverNavButton.Location = new Point(612, 9);
+            driverNavButton.Location = new Point(536, 7);
+            driverNavButton.Margin = new Padding(3, 2, 3, 2);
             driverNavButton.Name = "driverNavButton";
-            driverNavButton.Size = new Size(81, 37);
+            driverNavButton.Size = new Size(71, 28);
             driverNavButton.TabIndex = 14;
             driverNavButton.Text = "Drivers";
             driverNavButton.UseVisualStyleBackColor = true;
@@ -179,9 +181,10 @@
             // forwardButton
             // 
             forwardButton.Dock = DockStyle.Right;
-            forwardButton.Location = new Point(880, 0);
+            forwardButton.Location = new Point(766, 0);
+            forwardButton.Margin = new Padding(3, 2, 3, 2);
             forwardButton.Name = "forwardButton";
-            forwardButton.Size = new Size(46, 49);
+            forwardButton.Size = new Size(40, 36);
             forwardButton.TabIndex = 13;
             forwardButton.Text = "-->";
             forwardButton.UseVisualStyleBackColor = true;
@@ -189,9 +192,10 @@
             // logButton
             // 
             logButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            logButton.Location = new Point(540, 9);
+            logButton.Location = new Point(472, 7);
+            logButton.Margin = new Padding(3, 2, 3, 2);
             logButton.Name = "logButton";
-            logButton.Size = new Size(66, 37);
+            logButton.Size = new Size(58, 28);
             logButton.TabIndex = 12;
             logButton.Text = "Logs";
             logButton.UseVisualStyleBackColor = true;
@@ -200,9 +204,10 @@
             // camButton
             // 
             camButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            camButton.Location = new Point(453, 9);
+            camButton.Location = new Point(396, 7);
+            camButton.Margin = new Padding(3, 2, 3, 2);
             camButton.Name = "camButton";
-            camButton.Size = new Size(81, 37);
+            camButton.Size = new Size(71, 28);
             camButton.TabIndex = 12;
             camButton.Text = "Cameras";
             camButton.UseVisualStyleBackColor = true;
@@ -211,9 +216,10 @@
             // statusButton
             // 
             statusButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            statusButton.Location = new Point(360, 9);
+            statusButton.Location = new Point(315, 7);
+            statusButton.Margin = new Padding(3, 2, 3, 2);
             statusButton.Name = "statusButton";
-            statusButton.Size = new Size(87, 37);
+            statusButton.Size = new Size(76, 28);
             statusButton.TabIndex = 12;
             statusButton.Text = "Status";
             statusButton.UseVisualStyleBackColor = true;
@@ -222,9 +228,10 @@
             // accButton
             // 
             accButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            accButton.Location = new Point(258, 9);
+            accButton.Location = new Point(226, 7);
+            accButton.Margin = new Padding(3, 2, 3, 2);
             accButton.Name = "accButton";
-            accButton.Size = new Size(96, 37);
+            accButton.Size = new Size(84, 28);
             accButton.TabIndex = 3;
             accButton.Text = "Accessories";
             accButton.UseVisualStyleBackColor = true;
@@ -233,9 +240,10 @@
             // gpsButton
             // 
             gpsButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            gpsButton.Location = new Point(153, 9);
+            gpsButton.Location = new Point(134, 7);
+            gpsButton.Margin = new Padding(3, 2, 3, 2);
             gpsButton.Name = "gpsButton";
-            gpsButton.Size = new Size(99, 37);
+            gpsButton.Size = new Size(87, 28);
             gpsButton.TabIndex = 2;
             gpsButton.Text = "GPS";
             gpsButton.UseVisualStyleBackColor = true;
@@ -245,8 +253,9 @@
             // 
             backButton.Dock = DockStyle.Left;
             backButton.Location = new Point(0, 0);
+            backButton.Margin = new Padding(3, 2, 3, 2);
             backButton.Name = "backButton";
-            backButton.Size = new Size(44, 49);
+            backButton.Size = new Size(38, 36);
             backButton.TabIndex = 1;
             backButton.Text = "<--";
             backButton.UseVisualStyleBackColor = true;
@@ -254,9 +263,10 @@
             // homeButton
             // 
             homeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            homeButton.Location = new Point(53, 9);
+            homeButton.Location = new Point(46, 7);
+            homeButton.Margin = new Padding(3, 2, 3, 2);
             homeButton.Name = "homeButton";
-            homeButton.Size = new Size(94, 37);
+            homeButton.Size = new Size(82, 28);
             homeButton.TabIndex = 0;
             homeButton.Text = "Home";
             homeButton.UseVisualStyleBackColor = true;
@@ -267,10 +277,10 @@
             tableLayoutPanel2.ColumnCount = 5;
             tableLayoutPanel1.SetColumnSpan(tableLayoutPanel2, 2);
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 69F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 69F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 97F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 86F));
             tableLayoutPanel2.Controls.Add(allDownButton, 2, 0);
             tableLayoutPanel2.Controls.Add(allUpButton, 1, 0);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel7, 2, 2);
@@ -286,24 +296,22 @@
             tableLayoutPanel2.Controls.Add(pictureBoxFrontDriver, 3, 1);
             tableLayoutPanel2.Controls.Add(pictureBoxFrontPassenger, 3, 2);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(3, 127);
-            tableLayoutPanel2.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel2.Location = new Point(3, 83);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 3;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(926, 183);
+            tableLayoutPanel2.Size = new Size(806, 282);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // allDownButton
             // 
             allDownButton.Dock = DockStyle.Fill;
             allDownButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            allDownButton.Location = new Point(417, 4);
-            allDownButton.Margin = new Padding(3, 4, 3, 4);
+            allDownButton.Location = new Point(363, 3);
             allDownButton.Name = "allDownButton";
-            allDownButton.Size = new Size(63, 32);
+            allDownButton.Size = new Size(54, 24);
             allDownButton.TabIndex = 6;
             allDownButton.Text = "DOWN";
             allDownButton.UseVisualStyleBackColor = true;
@@ -313,10 +321,9 @@
             // 
             allUpButton.Dock = DockStyle.Fill;
             allUpButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            allUpButton.Location = new Point(348, 4);
-            allUpButton.Margin = new Padding(3, 4, 3, 4);
+            allUpButton.Location = new Point(303, 3);
             allUpButton.Name = "allUpButton";
-            allUpButton.Size = new Size(63, 32);
+            allUpButton.Size = new Size(54, 24);
             allUpButton.TabIndex = 5;
             allUpButton.Text = "ALL UP";
             allUpButton.UseVisualStyleBackColor = true;
@@ -328,23 +335,21 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.Controls.Add(downFrontPassengerButton, 0, 1);
             tableLayoutPanel7.Controls.Add(upFrontPassengerButton, 0, 0);
-            tableLayoutPanel7.Location = new Point(417, 115);
-            tableLayoutPanel7.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel7.Location = new Point(363, 159);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 2;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(62, 64);
+            tableLayoutPanel7.Size = new Size(54, 71);
             tableLayoutPanel7.TabIndex = 1;
             // 
             // downFrontPassengerButton
             // 
             downFrontPassengerButton.Dock = DockStyle.Fill;
             downFrontPassengerButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            downFrontPassengerButton.Location = new Point(3, 36);
-            downFrontPassengerButton.Margin = new Padding(3, 4, 3, 4);
+            downFrontPassengerButton.Location = new Point(3, 38);
             downFrontPassengerButton.Name = "downFrontPassengerButton";
-            downFrontPassengerButton.Size = new Size(56, 24);
+            downFrontPassengerButton.Size = new Size(48, 30);
             downFrontPassengerButton.TabIndex = 2;
             downFrontPassengerButton.Text = "Down";
             downFrontPassengerButton.UseVisualStyleBackColor = true;
@@ -354,10 +359,9 @@
             // 
             upFrontPassengerButton.Dock = DockStyle.Fill;
             upFrontPassengerButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            upFrontPassengerButton.Location = new Point(3, 4);
-            upFrontPassengerButton.Margin = new Padding(3, 4, 3, 4);
+            upFrontPassengerButton.Location = new Point(3, 3);
             upFrontPassengerButton.Name = "upFrontPassengerButton";
-            upFrontPassengerButton.Size = new Size(56, 24);
+            upFrontPassengerButton.Size = new Size(48, 29);
             upFrontPassengerButton.TabIndex = 1;
             upFrontPassengerButton.Text = "Up";
             upFrontPassengerButton.UseVisualStyleBackColor = true;
@@ -366,26 +370,24 @@
             // tableLayoutPanel6
             // 
             tableLayoutPanel6.ColumnCount = 1;
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 60F));
             tableLayoutPanel6.Controls.Add(downRearDriverButton, 0, 1);
             tableLayoutPanel6.Controls.Add(upRearDriverButton, 0, 0);
-            tableLayoutPanel6.Location = new Point(348, 44);
-            tableLayoutPanel6.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel6.Location = new Point(303, 33);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 2;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(62, 63);
+            tableLayoutPanel6.Size = new Size(54, 72);
             tableLayoutPanel6.TabIndex = 1;
             // 
             // downRearDriverButton
             // 
             downRearDriverButton.Dock = DockStyle.Fill;
             downRearDriverButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            downRearDriverButton.Location = new Point(3, 35);
-            downRearDriverButton.Margin = new Padding(3, 4, 3, 4);
+            downRearDriverButton.Location = new Point(3, 39);
             downRearDriverButton.Name = "downRearDriverButton";
-            downRearDriverButton.Size = new Size(56, 24);
+            downRearDriverButton.Size = new Size(54, 30);
             downRearDriverButton.TabIndex = 2;
             downRearDriverButton.Text = "Down";
             downRearDriverButton.UseVisualStyleBackColor = true;
@@ -395,10 +397,9 @@
             // 
             upRearDriverButton.Dock = DockStyle.Fill;
             upRearDriverButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            upRearDriverButton.Location = new Point(3, 4);
-            upRearDriverButton.Margin = new Padding(3, 4, 3, 4);
+            upRearDriverButton.Location = new Point(3, 3);
             upRearDriverButton.Name = "upRearDriverButton";
-            upRearDriverButton.Size = new Size(56, 23);
+            upRearDriverButton.Size = new Size(54, 30);
             upRearDriverButton.TabIndex = 1;
             upRearDriverButton.Text = "Up";
             upRearDriverButton.UseVisualStyleBackColor = true;
@@ -410,23 +411,21 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.Controls.Add(downRearPassengerButton, 0, 1);
             tableLayoutPanel5.Controls.Add(upRearPassengerButton, 0, 0);
-            tableLayoutPanel5.Location = new Point(348, 115);
-            tableLayoutPanel5.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel5.Location = new Point(303, 159);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 2;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(62, 64);
+            tableLayoutPanel5.Size = new Size(54, 71);
             tableLayoutPanel5.TabIndex = 0;
             // 
             // downRearPassengerButton
             // 
             downRearPassengerButton.Dock = DockStyle.Fill;
             downRearPassengerButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            downRearPassengerButton.Location = new Point(3, 36);
-            downRearPassengerButton.Margin = new Padding(3, 4, 3, 4);
+            downRearPassengerButton.Location = new Point(3, 38);
             downRearPassengerButton.Name = "downRearPassengerButton";
-            downRearPassengerButton.Size = new Size(56, 24);
+            downRearPassengerButton.Size = new Size(48, 30);
             downRearPassengerButton.TabIndex = 2;
             downRearPassengerButton.Text = "Down";
             downRearPassengerButton.UseVisualStyleBackColor = true;
@@ -436,10 +435,9 @@
             // 
             upRearPassengerButton.Dock = DockStyle.Fill;
             upRearPassengerButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            upRearPassengerButton.Location = new Point(3, 4);
-            upRearPassengerButton.Margin = new Padding(3, 4, 3, 4);
+            upRearPassengerButton.Location = new Point(3, 3);
             upRearPassengerButton.Name = "upRearPassengerButton";
-            upRearPassengerButton.Size = new Size(56, 24);
+            upRearPassengerButton.Size = new Size(48, 29);
             upRearPassengerButton.TabIndex = 1;
             upRearPassengerButton.Text = "Up";
             upRearPassengerButton.UseVisualStyleBackColor = true;
@@ -451,24 +449,22 @@
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.Controls.Add(upFrontDriverButton, 0, 0);
             tableLayoutPanel8.Controls.Add(downFrontDriverButton, 0, 1);
-            tableLayoutPanel8.Location = new Point(417, 44);
-            tableLayoutPanel8.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel8.Location = new Point(363, 33);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
-            tableLayoutPanel8.Size = new Size(62, 63);
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel8.Size = new Size(54, 72);
             tableLayoutPanel8.TabIndex = 2;
             // 
             // upFrontDriverButton
             // 
             upFrontDriverButton.Dock = DockStyle.Fill;
             upFrontDriverButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            upFrontDriverButton.Location = new Point(3, 4);
-            upFrontDriverButton.Margin = new Padding(3, 4, 3, 4);
+            upFrontDriverButton.Location = new Point(3, 3);
             upFrontDriverButton.Name = "upFrontDriverButton";
-            upFrontDriverButton.Size = new Size(56, 23);
+            upFrontDriverButton.Size = new Size(48, 30);
             upFrontDriverButton.TabIndex = 0;
             upFrontDriverButton.Text = "Up";
             upFrontDriverButton.UseVisualStyleBackColor = true;
@@ -478,10 +474,9 @@
             // 
             downFrontDriverButton.Dock = DockStyle.Fill;
             downFrontDriverButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            downFrontDriverButton.Location = new Point(3, 35);
-            downFrontDriverButton.Margin = new Padding(3, 4, 3, 4);
+            downFrontDriverButton.Location = new Point(3, 39);
             downFrontDriverButton.Name = "downFrontDriverButton";
-            downFrontDriverButton.Size = new Size(56, 24);
+            downFrontDriverButton.Size = new Size(48, 30);
             downFrontDriverButton.TabIndex = 1;
             downFrontDriverButton.Text = "Down";
             downFrontDriverButton.UseVisualStyleBackColor = true;
@@ -492,11 +487,10 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Dock = DockStyle.Fill;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(486, 4);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Location = new Point(423, 3);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(339, 27);
+            textBox2.Size = new Size(294, 22);
             textBox2.TabIndex = 3;
             textBox2.TabStop = false;
             textBox2.Text = "Front";
@@ -507,11 +501,10 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Dock = DockStyle.Fill;
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(3, 4);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
+            textBox3.Location = new Point(3, 3);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(339, 27);
+            textBox3.Size = new Size(294, 22);
             textBox3.TabIndex = 4;
             textBox3.TabStop = false;
             textBox3.Text = "Rear";
@@ -522,11 +515,10 @@
             textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(831, 62);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
+            textBox4.Location = new Point(723, 82);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(92, 27);
+            textBox4.Size = new Size(80, 22);
             textBox4.TabIndex = 7;
             textBox4.TabStop = false;
             textBox4.Text = "Driver";
@@ -536,11 +528,10 @@
             textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(831, 134);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
+            textBox5.Location = new Point(723, 209);
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
-            textBox5.Size = new Size(92, 25);
+            textBox5.Size = new Size(80, 20);
             textBox5.TabIndex = 8;
             textBox5.TabStop = false;
             textBox5.Text = "Passenger";
@@ -549,10 +540,9 @@
             // 
             pictureBoxRearDriver.Dock = DockStyle.Fill;
             pictureBoxRearDriver.Image = (Image)resources.GetObject("pictureBoxRearDriver.Image");
-            pictureBoxRearDriver.Location = new Point(3, 44);
-            pictureBoxRearDriver.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxRearDriver.Location = new Point(3, 33);
             pictureBoxRearDriver.Name = "pictureBoxRearDriver";
-            pictureBoxRearDriver.Size = new Size(339, 63);
+            pictureBoxRearDriver.Size = new Size(294, 120);
             pictureBoxRearDriver.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxRearDriver.TabIndex = 9;
             pictureBoxRearDriver.TabStop = false;
@@ -561,10 +551,9 @@
             // 
             pictureBoxRearPassenger.Dock = DockStyle.Fill;
             pictureBoxRearPassenger.Image = (Image)resources.GetObject("pictureBoxRearPassenger.Image");
-            pictureBoxRearPassenger.Location = new Point(3, 115);
-            pictureBoxRearPassenger.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxRearPassenger.Location = new Point(3, 159);
             pictureBoxRearPassenger.Name = "pictureBoxRearPassenger";
-            pictureBoxRearPassenger.Size = new Size(339, 64);
+            pictureBoxRearPassenger.Size = new Size(294, 120);
             pictureBoxRearPassenger.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxRearPassenger.TabIndex = 10;
             pictureBoxRearPassenger.TabStop = false;
@@ -573,10 +562,9 @@
             // 
             pictureBoxFrontDriver.Dock = DockStyle.Fill;
             pictureBoxFrontDriver.Image = (Image)resources.GetObject("pictureBoxFrontDriver.Image");
-            pictureBoxFrontDriver.Location = new Point(486, 44);
-            pictureBoxFrontDriver.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxFrontDriver.Location = new Point(423, 33);
             pictureBoxFrontDriver.Name = "pictureBoxFrontDriver";
-            pictureBoxFrontDriver.Size = new Size(339, 63);
+            pictureBoxFrontDriver.Size = new Size(294, 120);
             pictureBoxFrontDriver.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxFrontDriver.TabIndex = 11;
             pictureBoxFrontDriver.TabStop = false;
@@ -585,10 +573,9 @@
             // 
             pictureBoxFrontPassenger.Dock = DockStyle.Fill;
             pictureBoxFrontPassenger.Image = (Image)resources.GetObject("pictureBoxFrontPassenger.Image");
-            pictureBoxFrontPassenger.Location = new Point(486, 115);
-            pictureBoxFrontPassenger.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxFrontPassenger.Location = new Point(423, 159);
             pictureBoxFrontPassenger.Name = "pictureBoxFrontPassenger";
-            pictureBoxFrontPassenger.Size = new Size(339, 64);
+            pictureBoxFrontPassenger.Size = new Size(294, 120);
             pictureBoxFrontPassenger.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxFrontPassenger.TabIndex = 12;
             pictureBoxFrontPassenger.TabStop = false;
@@ -602,14 +589,13 @@
             tableLayoutPanel3.Controls.Add(tableLayoutPanel9, 1, 0);
             tableLayoutPanel3.Controls.Add(tableLayoutPanel10, 0, 1);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 318);
-            tableLayoutPanel3.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel3.Location = new Point(3, 371);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
-            tableLayoutPanel3.Size = new Size(460, 231);
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel3.Size = new Size(400, 261);
             tableLayoutPanel3.TabIndex = 1;
             // 
             // doorsTextBox
@@ -618,11 +604,10 @@
             doorsTextBox.BackColor = SystemColors.Menu;
             doorsTextBox.BorderStyle = BorderStyle.None;
             doorsTextBox.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            doorsTextBox.Location = new Point(3, 35);
-            doorsTextBox.Margin = new Padding(3, 4, 3, 4);
+            doorsTextBox.Location = new Point(3, 47);
             doorsTextBox.Name = "doorsTextBox";
             doorsTextBox.ReadOnly = true;
-            doorsTextBox.Size = new Size(224, 45);
+            doorsTextBox.Size = new Size(194, 36);
             doorsTextBox.TabIndex = 13;
             doorsTextBox.TabStop = false;
             doorsTextBox.Text = "Doors";
@@ -635,23 +620,21 @@
             tableLayoutPanel9.Controls.Add(unlockDoorsButton, 0, 1);
             tableLayoutPanel9.Controls.Add(lockDoorsButton, 0, 0);
             tableLayoutPanel9.Dock = DockStyle.Fill;
-            tableLayoutPanel9.Location = new Point(233, 4);
-            tableLayoutPanel9.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel9.Location = new Point(203, 3);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
             tableLayoutPanel9.RowCount = 2;
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.Size = new Size(224, 107);
+            tableLayoutPanel9.Size = new Size(194, 124);
             tableLayoutPanel9.TabIndex = 14;
             // 
             // unlockDoorsButton
             // 
             unlockDoorsButton.Dock = DockStyle.Fill;
             unlockDoorsButton.Font = new Font("Segoe UI", 20.25F);
-            unlockDoorsButton.Location = new Point(3, 57);
-            unlockDoorsButton.Margin = new Padding(3, 4, 3, 4);
+            unlockDoorsButton.Location = new Point(3, 65);
             unlockDoorsButton.Name = "unlockDoorsButton";
-            unlockDoorsButton.Size = new Size(218, 46);
+            unlockDoorsButton.Size = new Size(188, 56);
             unlockDoorsButton.TabIndex = 1;
             unlockDoorsButton.Text = "Unlock";
             unlockDoorsButton.UseVisualStyleBackColor = true;
@@ -661,10 +644,9 @@
             // 
             lockDoorsButton.Dock = DockStyle.Fill;
             lockDoorsButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lockDoorsButton.Location = new Point(3, 4);
-            lockDoorsButton.Margin = new Padding(3, 4, 3, 4);
+            lockDoorsButton.Location = new Point(3, 3);
             lockDoorsButton.Name = "lockDoorsButton";
-            lockDoorsButton.Size = new Size(218, 45);
+            lockDoorsButton.Size = new Size(188, 56);
             lockDoorsButton.TabIndex = 0;
             lockDoorsButton.Text = "Locked";
             lockDoorsButton.UseVisualStyleBackColor = true;
@@ -678,13 +660,12 @@
             tableLayoutPanel10.Controls.Add(remoteStartStatusTextBox, 0, 0);
             tableLayoutPanel10.Controls.Add(changeRemoteStatusButton, 0, 1);
             tableLayoutPanel10.Dock = DockStyle.Fill;
-            tableLayoutPanel10.Location = new Point(3, 119);
-            tableLayoutPanel10.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel10.Location = new Point(3, 133);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 2;
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.Size = new Size(454, 108);
+            tableLayoutPanel10.Size = new Size(394, 125);
             tableLayoutPanel10.TabIndex = 15;
             // 
             // remoteStartStatusTextBox
@@ -693,11 +674,10 @@
             remoteStartStatusTextBox.BackColor = SystemColors.Menu;
             remoteStartStatusTextBox.BorderStyle = BorderStyle.None;
             remoteStartStatusTextBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remoteStartStatusTextBox.Location = new Point(3, 9);
-            remoteStartStatusTextBox.Margin = new Padding(3, 4, 3, 4);
+            remoteStartStatusTextBox.Location = new Point(3, 17);
             remoteStartStatusTextBox.Name = "remoteStartStatusTextBox";
             remoteStartStatusTextBox.ReadOnly = true;
-            remoteStartStatusTextBox.Size = new Size(448, 35);
+            remoteStartStatusTextBox.Size = new Size(388, 28);
             remoteStartStatusTextBox.TabIndex = 0;
             remoteStartStatusTextBox.TabStop = false;
             remoteStartStatusTextBox.Text = "Remote Start is: Enabled";
@@ -707,10 +687,9 @@
             // 
             changeRemoteStatusButton.Dock = DockStyle.Fill;
             changeRemoteStatusButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            changeRemoteStatusButton.Location = new Point(3, 58);
-            changeRemoteStatusButton.Margin = new Padding(3, 4, 3, 4);
+            changeRemoteStatusButton.Location = new Point(3, 65);
             changeRemoteStatusButton.Name = "changeRemoteStatusButton";
-            changeRemoteStatusButton.Size = new Size(448, 46);
+            changeRemoteStatusButton.Size = new Size(388, 57);
             changeRemoteStatusButton.TabIndex = 1;
             changeRemoteStatusButton.TabStop = false;
             changeRemoteStatusButton.Text = "Disable";
@@ -727,14 +706,13 @@
             tableLayoutPanel4.Controls.Add(remoteStartTextBox, 0, 0);
             tableLayoutPanel4.Controls.Add(remoteStartOutputListBox, 0, 2);
             tableLayoutPanel4.Dock = DockStyle.Fill;
-            tableLayoutPanel4.Location = new Point(469, 318);
-            tableLayoutPanel4.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel4.Location = new Point(409, 371);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 3;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
-            tableLayoutPanel4.Size = new Size(460, 231);
+            tableLayoutPanel4.Size = new Size(400, 261);
             tableLayoutPanel4.TabIndex = 2;
             // 
             // stopRemoteStartButton
@@ -742,10 +720,9 @@
             stopRemoteStartButton.BackColor = Color.Red;
             stopRemoteStartButton.Dock = DockStyle.Fill;
             stopRemoteStartButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            stopRemoteStartButton.Location = new Point(233, 50);
-            stopRemoteStartButton.Margin = new Padding(3, 4, 3, 4);
+            stopRemoteStartButton.Location = new Point(203, 55);
             stopRemoteStartButton.Name = "stopRemoteStartButton";
-            stopRemoteStartButton.Size = new Size(224, 38);
+            stopRemoteStartButton.Size = new Size(194, 46);
             stopRemoteStartButton.TabIndex = 16;
             stopRemoteStartButton.Text = "Stop";
             stopRemoteStartButton.UseVisualStyleBackColor = false;
@@ -756,10 +733,9 @@
             startRemoteStartButton.BackColor = Color.Lime;
             startRemoteStartButton.Dock = DockStyle.Fill;
             startRemoteStartButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            startRemoteStartButton.Location = new Point(3, 50);
-            startRemoteStartButton.Margin = new Padding(3, 4, 3, 4);
+            startRemoteStartButton.Location = new Point(3, 55);
             startRemoteStartButton.Name = "startRemoteStartButton";
-            startRemoteStartButton.Size = new Size(224, 38);
+            startRemoteStartButton.Size = new Size(194, 46);
             startRemoteStartButton.TabIndex = 15;
             startRemoteStartButton.Text = "Start";
             startRemoteStartButton.UseVisualStyleBackColor = false;
@@ -772,11 +748,10 @@
             remoteStartTextBox.BorderStyle = BorderStyle.None;
             tableLayoutPanel4.SetColumnSpan(remoteStartTextBox, 2);
             remoteStartTextBox.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remoteStartTextBox.Location = new Point(3, 4);
-            remoteStartTextBox.Margin = new Padding(3, 4, 3, 4);
+            remoteStartTextBox.Location = new Point(3, 8);
             remoteStartTextBox.Name = "remoteStartTextBox";
             remoteStartTextBox.ReadOnly = true;
-            remoteStartTextBox.Size = new Size(454, 45);
+            remoteStartTextBox.Size = new Size(394, 36);
             remoteStartTextBox.TabIndex = 14;
             remoteStartTextBox.TabStop = false;
             remoteStartTextBox.Text = "Remote Start";
@@ -788,12 +763,11 @@
             remoteStartOutputListBox.Dock = DockStyle.Fill;
             remoteStartOutputListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             remoteStartOutputListBox.FormattingEnabled = true;
-            remoteStartOutputListBox.ItemHeight = 28;
-            remoteStartOutputListBox.Location = new Point(3, 96);
-            remoteStartOutputListBox.Margin = new Padding(3, 4, 3, 4);
+            remoteStartOutputListBox.ItemHeight = 21;
+            remoteStartOutputListBox.Location = new Point(3, 107);
             remoteStartOutputListBox.Name = "remoteStartOutputListBox";
             remoteStartOutputListBox.SelectionMode = SelectionMode.None;
-            remoteStartOutputListBox.Size = new Size(454, 131);
+            remoteStartOutputListBox.Size = new Size(394, 151);
             remoteStartOutputListBox.TabIndex = 17;
             remoteStartOutputListBox.TabStop = false;
             // 
@@ -802,11 +776,10 @@
             tableLayoutPanel1.SetColumnSpan(textBox1, 2);
             textBox1.Dock = DockStyle.Fill;
             textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(3, 74);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(3, 43);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(926, 52);
+            textBox1.Size = new Size(806, 43);
             textBox1.TabIndex = 0;
             textBox1.Text = "Control Accessories";
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -819,11 +792,10 @@
             // 
             // AccessoriesPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 553);
+            ClientSize = new Size(812, 635);
             Controls.Add(tableLayoutPanel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "AccessoriesPage";
             Text = "Accessories";
             tableLayoutPanel1.ResumeLayout(false);
