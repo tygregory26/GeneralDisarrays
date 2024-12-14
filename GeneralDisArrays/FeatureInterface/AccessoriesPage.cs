@@ -36,6 +36,10 @@ namespace FeatureInterface
 
             InitializeComponent();
             this.mainPage = mainPage;
+            pictureBoxFrontPassenger.Load(startupPath + windowMid);
+            pictureBoxFrontDriver.Load(startupPath + windowMid);
+            pictureBoxRearPassenger.Load(startupPath + windowMid);
+            pictureBoxRearDriver.Load(startupPath + windowMid);
         }
 
         private void upRearDriverButton_Click(object sender, EventArgs e)

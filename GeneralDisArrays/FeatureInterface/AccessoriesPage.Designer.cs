@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccessoriesPage));
             tableLayoutPanel1 = new TableLayoutPanel();
             NavPanel = new Panel();
             secNavButton = new Button();
@@ -80,7 +78,6 @@
             remoteStartTextBox = new TextBox();
             remoteStartOutputListBox = new ListBox();
             textBox1 = new TextBox();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             tableLayoutPanel1.SuspendLayout();
             NavPanel.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -539,7 +536,6 @@
             // pictureBoxRearDriver
             // 
             pictureBoxRearDriver.Dock = DockStyle.Fill;
-            pictureBoxRearDriver.Image = (Image)resources.GetObject("pictureBoxRearDriver.Image");
             pictureBoxRearDriver.Location = new Point(3, 33);
             pictureBoxRearDriver.Name = "pictureBoxRearDriver";
             pictureBoxRearDriver.Size = new Size(294, 120);
@@ -550,7 +546,6 @@
             // pictureBoxRearPassenger
             // 
             pictureBoxRearPassenger.Dock = DockStyle.Fill;
-            pictureBoxRearPassenger.Image = (Image)resources.GetObject("pictureBoxRearPassenger.Image");
             pictureBoxRearPassenger.Location = new Point(3, 159);
             pictureBoxRearPassenger.Name = "pictureBoxRearPassenger";
             pictureBoxRearPassenger.Size = new Size(294, 120);
@@ -561,7 +556,6 @@
             // pictureBoxFrontDriver
             // 
             pictureBoxFrontDriver.Dock = DockStyle.Fill;
-            pictureBoxFrontDriver.Image = (Image)resources.GetObject("pictureBoxFrontDriver.Image");
             pictureBoxFrontDriver.Location = new Point(423, 33);
             pictureBoxFrontDriver.Name = "pictureBoxFrontDriver";
             pictureBoxFrontDriver.Size = new Size(294, 120);
@@ -572,7 +566,6 @@
             // pictureBoxFrontPassenger
             // 
             pictureBoxFrontPassenger.Dock = DockStyle.Fill;
-            pictureBoxFrontPassenger.Image = (Image)resources.GetObject("pictureBoxFrontPassenger.Image");
             pictureBoxFrontPassenger.Location = new Point(423, 159);
             pictureBoxFrontPassenger.Name = "pictureBoxFrontPassenger";
             pictureBoxFrontPassenger.Size = new Size(294, 120);
@@ -784,12 +777,6 @@
             textBox1.Text = "Control Accessories";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
             // AccessoriesPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -846,7 +833,6 @@
         private Button downFrontDriverButton;
         private TextBox textBox4;
         private TextBox textBox5;
-        private ContextMenuStrip contextMenuStrip1;
         private PictureBox pictureBoxRearDriver;
         private PictureBox pictureBoxRearPassenger;
         private PictureBox pictureBoxFrontDriver;
